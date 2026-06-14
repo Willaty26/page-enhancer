@@ -19,7 +19,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="text-lg font-bold tracking-wide">
-          Alex Rojas <span className="text-primary">|</span> Soluciones
+          Digitalizate ya!
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">

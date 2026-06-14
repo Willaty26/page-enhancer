@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-[#020202] px-5 py-14">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center">
         <div className="text-xl font-bold tracking-wide text-foreground">
-          Alex Rojas <span className="text-primary">|</span> Soluciones Digitales
+          Alex Rojas <span className="text-primary">|</span> Digitalizate ya!
         </div>
         <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
           Impulsando el crecimiento de negocios locales en Massachusetts y de todo el

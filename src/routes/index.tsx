@@ -95,7 +95,7 @@ function HomePage() {
       <section className="px-5 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center text-3xl font-extrabold md:text-4xl">
-            Soluciones Digitales para <span className="text-primary">Tu Negocio</span>
+            Digitalízate ya para <span className="text-primary">Tu Negocio</span>
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {SERVICES.map(({ icon: Icon, title, desc }) => (

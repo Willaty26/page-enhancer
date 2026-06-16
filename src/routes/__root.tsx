@@ -119,7 +119,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Alex Rojas — Soluciones Digitales",
+          name: "Alex Rojas — Digitalizate ya!",
           description:
             "Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts.",
           areaServed: { "@type": "AdministrativeArea", name: "Massachusetts, EE. UU." },

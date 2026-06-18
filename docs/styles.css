@@ -124,3 +124,10 @@ h3{font-size:1.2rem;font-weight:700}
 .mt{margin-top:32px}
 .about-prose p{margin-bottom:18px;color:var(--muted);font-size:1.05rem}
 .about-prose strong{color:var(--fg)}
+
+/* Language switcher */
+.lang-switch{display:flex;align-items:center;margin-right:8px}
+.lang-switch select{background:#0c0c0c;color:var(--fg);border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-family:inherit;font-size:.8rem;font-weight:600;cursor:pointer;outline:none;transition:border-color .2s}
+.lang-switch select:hover,.lang-switch select:focus{border-color:var(--primary)}
+.lang-switch select option{background:#0c0c0c;color:var(--fg)}
+@media(max-width:767px){.lang-switch{margin-right:4px}.lang-switch select{padding:5px 8px;font-size:.75rem}}

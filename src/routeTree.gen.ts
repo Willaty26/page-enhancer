@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiciosRouteImport } from './routes/servicios'
+import { Route as GuiaCreacionWebRouteImport } from './routes/guia-creacion-web'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServiciosRoute = ServiciosRouteImport.update({
   id: '/servicios',
   path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuiaCreacionWebRoute = GuiaCreacionWebRouteImport.update({
+  id: '/guia-creacion-web',
+  path: '/guia-creacion-web',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqRoute = FaqRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
+  '/guia-creacion-web': typeof GuiaCreacionWebRoute
   '/servicios': typeof ServiciosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
+  '/guia-creacion-web': typeof GuiaCreacionWebRoute
   '/servicios': typeof ServiciosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
+  '/guia-creacion-web': typeof GuiaCreacionWebRoute
   '/servicios': typeof ServiciosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
@@ -78,16 +87,25 @@ export interface FileRouteTypes {
     | '/'
     | '/contacto'
     | '/faq'
+    | '/guia-creacion-web'
     | '/servicios'
     | '/sitemap.xml'
     | '/sobre-mi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contacto' | '/faq' | '/servicios' | '/sitemap.xml' | '/sobre-mi'
+  to:
+    | '/'
+    | '/contacto'
+    | '/faq'
+    | '/guia-creacion-web'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/sobre-mi'
   id:
     | '__root__'
     | '/'
     | '/contacto'
     | '/faq'
+    | '/guia-creacion-web'
     | '/servicios'
     | '/sitemap.xml'
     | '/sobre-mi'
@@ -97,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactoRoute: typeof ContactoRoute
   FaqRoute: typeof FaqRoute
+  GuiaCreacionWebRoute: typeof GuiaCreacionWebRoute
   ServiciosRoute: typeof ServiciosRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SobreMiRoute: typeof SobreMiRoute
@@ -123,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/servicios'
       fullPath: '/servicios'
       preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guia-creacion-web': {
+      id: '/guia-creacion-web'
+      path: '/guia-creacion-web'
+      fullPath: '/guia-creacion-web'
+      preLoaderRoute: typeof GuiaCreacionWebRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/faq': {
@@ -153,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactoRoute: ContactoRoute,
   FaqRoute: FaqRoute,
+  GuiaCreacionWebRoute: GuiaCreacionWebRoute,
   ServiciosRoute: ServiciosRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SobreMiRoute: SobreMiRoute,

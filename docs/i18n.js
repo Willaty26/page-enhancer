@@ -545,9 +545,9 @@
       apply(sel.value);
     });
     wrap.appendChild(sel);
-    // insertar antes del botón de menú móvil
+    // insertar después del botón de menú móvil (queda a la derecha en móvil)
     var menuBtn = headerInner.querySelector('.menu-btn');
-    if (menuBtn) headerInner.insertBefore(wrap, menuBtn);
+    if (menuBtn) menuBtn.after(wrap);
     else headerInner.appendChild(wrap);
   }
 

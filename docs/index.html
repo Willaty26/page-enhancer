@@ -19,84 +19,82 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="./styles.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alex Rojas — Digitalizate ya!","description":"Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts.","areaServed":{"@type":"AdministrativeArea","name":"Massachusetts, EE. UU."},"inLanguage":"es","sameAs":["https://wa.me/qr/6FOXVL5QCY4NN1"]}
-</script>
 </head>
 <body>
 <header class="header">
   <div class="header-inner">
-    <a href="./" class="brand">Digitalizate ya!</a>
+    <a href="./" class="brand" data-i18n="brand">Digitalizate ya!</a>
     <nav class="nav">
-      <a href="./" class="active">Inicio</a>
-      <a href="./servicios.html">Servicios</a>
-      <a href="./sobre-mi.html">Sobre mí</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./contacto.html">Contacto</a>
+      <a href="./" class="active" data-i18n="nav.home">Inicio</a>
+      <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+      <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+      <a href="./faq.html" data-i18n="nav.faq">FAQ</a>
+      <a href="./contacto.html" data-i18n="nav.contact">Contacto</a>
       <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">
+    <button id="menuBtn" class="menu-btn" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
   <nav id="mobileNav" class="mobile-nav">
-    <a href="./" class="active">Inicio</a>
-    <a href="./servicios.html">Servicios</a>
-    <a href="./sobre-mi.html">Sobre mí</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./contacto.html">Contacto</a>
+    <a href="./" class="active" data-i18n="nav.home">Inicio</a>
+    <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+    <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+    <a href="./faq.html" data-i18n="nav.faq">FAQ</a>
+    <a href="./contacto.html" data-i18n="nav.contact">Contacto</a>
     <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <h1>Tu Negocio Online,<br><span class="primary glow">Más Rápido y Seguro.</span></h1>
-    <p>Diseño web rápido, seguro y sin complicaciones para dueños de negocios que quieren conseguir más clientes. Construido con tecnología de servidores de alto nivel.</p>
-    <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt">Obtener Consulta Gratuita</a>
+    <h1 data-i18n-html="home.hero.title">Tu Negocio Online,<br><span class="primary glow">Más Rápido y Seguro.</span></h1>
+    <p data-i18n="home.hero.p">Diseño web rápido, seguro y sin complicaciones para dueños de negocios que quieren conseguir más clientes. Construido con tecnología de servidores de alto nivel.</p>
+    <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt" data-i18n="home.hero.cta">Obtener Consulta Gratuita</a>
   </section>
 
   <section class="section-card">
     <div class="benefits container">
-      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3>Velocidad real</h3><p>Carga en menos de 2 segundos en móviles.</p></div></div>
-      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h3>Seguro por diseño</h3><p>Buenas prácticas de ciberseguridad incluidas.</p></div></div>
-      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div><div><h3>Listo para Google</h3><p>SEO técnico configurado desde el día uno.</p></div></div>
+      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div><h3 data-i18n="home.b1.t">Velocidad real</h3><p data-i18n="home.b1.d">Carga en menos de 2 segundos en móviles.</p></div></div>
+      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h3 data-i18n="home.b2.t">Seguro por diseño</h3><p data-i18n="home.b2.d">Buenas prácticas de ciberseguridad incluidas.</p></div></div>
+      <div class="benefit"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div><div><h3 data-i18n="home.b3.t">Listo para Google</h3><p data-i18n="home.b3.d">SEO técnico configurado desde el día uno.</p></div></div>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <h2 class="center">Digitalízate ya para <span class="primary">Tu Negocio</span></h2>
+      <h2 class="center" data-i18n-html="home.serv.title">Digitalízate ya para <span class="primary">Tu Negocio</span></h2>
       <div class="grid grid-3 mt">
-        <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2c.87-.87.87-2.28 0-3.15-.87-.87-2.13-.85-3 .15z"/><path d="M12 15l-3-3a22 22 0 014-7 10 10 0 016-3 10 10 0 01-3 6 22 22 0 01-7 4z"/></svg></div><h3>El Escaparate Digital</h3><p>Tu negocio en línea en tiempo récord. Una página directa y optimizada para que los clientes locales te encuentren en Google y te contacten a un solo clic.</p></article>
-      <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div><h3>Catálogo Visual</h3><p>Muestra la calidad de tu trabajo al mundo. Galerías estructuradas y profesionales para contratistas, fotógrafos o creadores que exhiben proyectos.</p></article>
-      <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-3V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2H4"/><circle cx="12" cy="14" r="3"/></svg></div><h3>Captura de Prospectos</h3><p>Filtra a los curiosos. Formularios estratégicos que envían la información de clientes listos para comprar directo a tu correo.</p></article>
+        <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2c.87-.87.87-2.28 0-3.15-.87-.87-2.13-.85-3 .15z"/><path d="M12 15l-3-3a22 22 0 014-7 10 10 0 016-3 10 10 0 01-3 6 22 22 0 01-7 4z"/></svg></div><h3 data-i18n="home.s1.t">El Escaparate Digital</h3><p data-i18n="home.s1.d">Tu negocio en línea en tiempo récord. Una página directa y optimizada para que los clientes locales te encuentren en Google y te contacten a un solo clic.</p></article>
+      <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div><h3 data-i18n="home.s2.t">Catálogo Visual</h3><p data-i18n="home.s2.d">Muestra la calidad de tu trabajo al mundo. Galerías estructuradas y profesionales para contratistas, fotógrafos o creadores que exhiben proyectos.</p></article>
+      <article class="card"><div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-3V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2H4"/><circle cx="12" cy="14" r="3"/></svg></div><h3 data-i18n="home.s3.t">Captura de Prospectos</h3><p data-i18n="home.s3.d">Filtra a los curiosos. Formularios estratégicos que envían la información de clientes listos para comprar directo a tu correo.</p></article>
       </div>
-      <div class="center mt"><a href="./servicios.html" class="primary" style="font-weight:600">Ver el detalle de cada servicio →</a></div>
+      <div class="center mt"><a href="./servicios.html" class="primary" style="font-weight:600" data-i18n="home.serv.link">Ver el detalle de cada servicio →</a></div>
     </div>
   </section>
 
   <section class="section-card">
     <div class="container">
-      <h2 class="center">Lo que dicen mis <span class="primary">clientes</span></h2>
-      <p class="center muted" style="font-size:.85rem;margin-top:8px">(Testimonios de ejemplo)</p>
+      <h2 class="center" data-i18n-html="home.test.title">Lo que dicen mis <span class="primary">clientes</span></h2>
+      <p class="center muted" style="font-size:.85rem;margin-top:8px" data-i18n="home.test.note">(Testimonios de ejemplo)</p>
       <div class="grid grid-3 mt">
-        <figure class="quote"><blockquote>"Alex me entregó la página en 5 días. Empecé a recibir mensajes de clientes nuevos por WhatsApp esa misma semana."</blockquote><figcaption><div class="name">María Hernández</div><div class="role">Salón de belleza, Lawrence MA</div></figcaption></figure>
-        <figure class="quote"><blockquote>"Subió mis fotos de trabajos como un catálogo profesional. Ahora cierro presupuestos sin tener que explicar nada por teléfono."</blockquote><figcaption><div class="name">Carlos Pérez</div><div class="role">Contratista de pintura, Lowell MA</div></figcaption></figure>
-        <figure class="quote"><blockquote>"Explica todo en español claro, sin tecnicismos. La página se ve bonita y carga rapidísimo en el celular."</blockquote><figcaption><div class="name">Diana Vargas</div><div class="role">Repostería casera, Boston MA</div></figcaption></figure>
+        <figure class="quote"><blockquote data-i18n="home.t1.q">"Alex me entregó la página en 5 días. Empecé a recibir mensajes de clientes nuevos por WhatsApp esa misma semana."</blockquote><figcaption><div class="name">María Hernández</div><div class="role" data-i18n="home.t1.r">Salón de belleza, Lawrence MA</div></figcaption></figure>
+        <figure class="quote"><blockquote data-i18n="home.t2.q">"Subió mis fotos de trabajos como un catálogo profesional. Ahora cierro presupuestos sin tener que explicar nada por teléfono."</blockquote><figcaption><div class="name">Carlos Pérez</div><div class="role" data-i18n="home.t2.r">Contratista de pintura, Lowell MA</div></figcaption></figure>
+        <figure class="quote"><blockquote data-i18n="home.t3.q">"Explica todo en español claro, sin tecnicismos. La página se ve bonita y carga rapidísimo en el celular."</blockquote><figcaption><div class="name">Diana Vargas</div><div class="role" data-i18n="home.t3.r">Repostería casera, Boston MA</div></figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="center">
-    <h2>¿Listo para <span class="primary glow">empezar</span>?</h2>
-    <p class="muted mt" style="max-width:520px;margin:16px auto 0">Cuéntame de tu negocio en una llamada gratis de 20 minutos. Sin compromiso, sin tecnicismos.</p>
-    <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt">Hablemos por WhatsApp</a>
+    <h2 data-i18n-html="home.cta.title">¿Listo para <span class="primary glow">empezar</span>?</h2>
+    <p class="muted mt" style="max-width:520px;margin:16px auto 0" data-i18n="home.cta.p">Cuéntame de tu negocio en una llamada gratis de 20 minutos. Sin compromiso, sin tecnicismos.</p>
+    <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt" data-i18n="home.cta.btn">Hablemos por WhatsApp</a>
   </section>
 </main>
 
-<footer class="footer">© <span id="yr"></span> Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</footer>
+<footer class="footer">© <span id="yr"></span> <span data-i18n="footer">Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</span></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="./i18n.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>

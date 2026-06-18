@@ -20,25 +20,25 @@
 <body>
 <header class="header">
   <div class="header-inner">
-    <a href="./" class="brand">Digitalizate ya!</a>
+    <a href="./" class="brand" data-i18n="brand">Digitalizate ya!</a>
     <nav class="nav">
-      <a href="./">Inicio</a>
-      <a href="./servicios.html">Servicios</a>
-      <a href="./sobre-mi.html">Sobre mí</a>
-      <a href="./faq.html">FAQ</a>
-      <a href="./contacto.html" class="active">Contacto</a>
+      <a href="./" data-i18n="nav.home">Inicio</a>
+      <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+      <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+      <a href="./faq.html" data-i18n="nav.faq">FAQ</a>
+      <a href="./contacto.html" class="active" data-i18n="nav.contact">Contacto</a>
       <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">
+    <button id="menuBtn" class="menu-btn" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
   <nav id="mobileNav" class="mobile-nav">
-    <a href="./">Inicio</a>
-    <a href="./servicios.html">Servicios</a>
-    <a href="./sobre-mi.html">Sobre mí</a>
-    <a href="./faq.html">FAQ</a>
-    <a href="./contacto.html" class="active">Contacto</a>
+    <a href="./" data-i18n="nav.home">Inicio</a>
+    <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+    <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+    <a href="./faq.html" data-i18n="nav.faq">FAQ</a>
+    <a href="./contacto.html" class="active" data-i18n="nav.contact">Contacto</a>
     <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
   </nav>
 </header>
@@ -47,49 +47,50 @@
   <section>
     <div class="container">
       <header class="center">
-        <h1><span class="primary glow">Hablemos</span> de tu proyecto</h1>
-        <p class="muted mt" style="max-width:520px;margin:16px auto 0">Cuéntame brevemente qué necesitas. Respondo en menos de 24 horas, en español.</p>
+        <h1 data-i18n-html="cont.h1"><span class="primary glow">Hablemos</span> de tu proyecto</h1>
+        <p class="muted mt" data-i18n="cont.intro" style="max-width:520px;margin:16px auto 0">Cuéntame brevemente qué necesitas. Respondo en menos de 24 horas, en español.</p>
       </header>
 
       <div class="grid grid-2 mt">
         <div class="contact-info">
           <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-            <div><div class="title">WhatsApp directo</div><div class="desc">La forma más rápida de contactarme.</div></div>
+            <div><div class="title" data-i18n="cont.wa.t">WhatsApp directo</div><div class="desc" data-i18n="cont.wa.d">La forma más rápida de contactarme.</div></div>
           </a>
           <a href="mailto:hola@alexoscp.com">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
-            <div><div class="title">Correo electrónico</div><div class="desc">hola@alexoscp.com</div></div>
+            <div><div class="title" data-i18n="cont.mail.t">Correo electrónico</div><div class="desc" data-i18n="cont.mail.d">hola@alexoscp.com</div></div>
           </a>
           <div class="static">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <div><div class="title">Tiempo de respuesta</div><div class="desc">Menos de 24 horas, días hábiles.</div></div>
+            <div><div class="title" data-i18n="cont.time.t">Tiempo de respuesta</div><div class="desc" data-i18n="cont.time.d">Menos de 24 horas, días hábiles.</div></div>
           </div>
         </div>
 
         <form id="contactForm" class="form">
           <div class="field">
-            <label for="nombre">Nombre</label>
+            <label for="nombre" data-i18n="cont.f.name">Nombre</label>
             <input id="nombre" type="text" required>
           </div>
           <div class="field">
-            <label for="email">Correo</label>
+            <label for="email" data-i18n="cont.f.email">Correo</label>
             <input id="email" type="email" required>
           </div>
           <div class="field">
-            <label for="mensaje">Cuéntame de tu proyecto</label>
+            <label for="mensaje" data-i18n="cont.f.msg">Cuéntame de tu proyecto</label>
             <textarea id="mensaje" rows="5" required></textarea>
           </div>
-          <button type="submit" class="btn-cta">Enviar por WhatsApp</button>
-          <p class="muted center" style="font-size:.75rem;margin-top:12px">Al enviar, se abrirá WhatsApp con tu mensaje ya redactado.</p>
+          <button type="submit" class="btn-cta" data-i18n="cont.f.btn">Enviar por WhatsApp</button>
+          <p class="muted center" style="font-size:.75rem;margin-top:12px" data-i18n="cont.f.note">Al enviar, se abrirá WhatsApp con tu mensaje ya redactado.</p>
         </form>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">© <span id="yr"></span> Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</footer>
+<footer class="footer">© <span id="yr"></span> <span data-i18n="footer">Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</span></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="./i18n.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>

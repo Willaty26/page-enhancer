@@ -1,0 +1,558 @@
+// ============================================================
+// i18n simple para sitio estático — ES / EN / PT / IT / DE
+// ============================================================
+(function () {
+  var LANGS = [
+    { code: 'es', label: 'ES', flag: '🇪🇸' },
+    { code: 'en', label: 'EN', flag: '🇺🇸' },
+    { code: 'pt', label: 'PT', flag: '🇧🇷' },
+    { code: 'it', label: 'IT', flag: '🇮🇹' },
+    { code: 'de', label: 'DE', flag: '🇩🇪' }
+  ];
+
+  var T = {
+    es: {
+      // Marca + nav
+      'brand': 'Digitalizate ya!',
+      'nav.home': 'Inicio',
+      'nav.services': 'Servicios',
+      'nav.about': 'Sobre mí',
+      'nav.faq': 'FAQ',
+      'nav.contact': 'Contacto',
+      'nav.menu': 'Abrir menú',
+      'footer': 'Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.',
+
+      // Home
+      'home.hero.title': 'Tu Negocio Online,<br><span class="primary glow">Más Rápido y Seguro.</span>',
+      'home.hero.p': 'Diseño web rápido, seguro y sin complicaciones para dueños de negocios que quieren conseguir más clientes. Construido con tecnología de servidores de alto nivel.',
+      'home.hero.cta': 'Obtener Consulta Gratuita',
+      'home.b1.t': 'Velocidad real', 'home.b1.d': 'Carga en menos de 2 segundos en móviles.',
+      'home.b2.t': 'Seguro por diseño', 'home.b2.d': 'Buenas prácticas de ciberseguridad incluidas.',
+      'home.b3.t': 'Listo para Google', 'home.b3.d': 'SEO técnico configurado desde el día uno.',
+      'home.serv.title': 'Digitalízate ya para <span class="primary">Tu Negocio</span>',
+      'home.s1.t': 'El Escaparate Digital', 'home.s1.d': 'Tu negocio en línea en tiempo récord. Una página directa y optimizada para que los clientes locales te encuentren en Google y te contacten a un solo clic.',
+      'home.s2.t': 'Catálogo Visual', 'home.s2.d': 'Muestra la calidad de tu trabajo al mundo. Galerías estructuradas y profesionales para contratistas, fotógrafos o creadores que exhiben proyectos.',
+      'home.s3.t': 'Captura de Prospectos', 'home.s3.d': 'Filtra a los curiosos. Formularios estratégicos que envían la información de clientes listos para comprar directo a tu correo.',
+      'home.serv.link': 'Ver el detalle de cada servicio →',
+      'home.test.title': 'Lo que dicen mis <span class="primary">clientes</span>',
+      'home.test.note': '(Testimonios de ejemplo)',
+      'home.t1.q': '"Alex me entregó la página en 5 días. Empecé a recibir mensajes de clientes nuevos por WhatsApp esa misma semana."',
+      'home.t1.r': 'Salón de belleza, Lawrence MA',
+      'home.t2.q': '"Subió mis fotos de trabajos como un catálogo profesional. Ahora cierro presupuestos sin tener que explicar nada por teléfono."',
+      'home.t2.r': 'Contratista de pintura, Lowell MA',
+      'home.t3.q': '"Explica todo en español claro, sin tecnicismos. La página se ve bonita y carga rapidísimo en el celular."',
+      'home.t3.r': 'Repostería casera, Boston MA',
+      'home.cta.title': '¿Listo para <span class="primary glow">empezar</span>?',
+      'home.cta.p': 'Cuéntame de tu negocio en una llamada gratis de 20 minutos. Sin compromiso, sin tecnicismos.',
+      'home.cta.btn': 'Hablemos por WhatsApp',
+
+      // Servicios
+      'serv.h1': 'Mis <span class="primary glow">Servicios</span>',
+      'serv.intro': 'Tres soluciones pensadas para distintos momentos de tu negocio. Cada una se entrega con infraestructura web rápida, segura y bien configurada.',
+      'serv.1.t': 'El Escaparate Digital',
+      'serv.1.d': 'Una página web profesional, simple y directa para que los clientes locales te encuentren y te contacten.',
+      'serv.1.l1': 'Página única optimizada (one-page)',
+      'serv.1.l2': 'Botón directo a WhatsApp y mapa',
+      'serv.1.l3': 'SEO local para Google Maps',
+      'serv.1.l4': 'Hosting rápido y certificado SSL',
+      'serv.2.t': 'Catálogo Visual',
+      'serv.2.d': 'Galería estructurada para exhibir tus proyectos, productos o trabajos terminados.',
+      'serv.2.l1': 'Galería filtrable por categorías',
+      'serv.2.l2': 'Imágenes optimizadas (carga rápida)',
+      'serv.2.l3': 'Páginas individuales por proyecto',
+      'serv.2.l4': 'Listo para compartir en redes',
+      'serv.3.t': 'Captura de Prospectos',
+      'serv.3.d': 'Formularios y embudos pensados para que recibas solo a clientes calificados.',
+      'serv.3.l1': 'Formulario que llega a tu correo',
+      'serv.3.l2': 'Preguntas para filtrar curiosos',
+      'serv.3.l3': 'Integración con WhatsApp',
+      'serv.3.l4': 'Aviso instantáneo de cada lead',
+      'serv.proc.title': 'Cómo <span class="primary">trabajamos juntos</span>',
+      'serv.p1.t': '1. Consulta gratuita', 'serv.p1.d': 'Charlamos 20 minutos sobre tu negocio y tus objetivos.',
+      'serv.p2.t': '2. Propuesta clara', 'serv.p2.d': 'Te paso por escrito qué incluye, plazos y precio fijo.',
+      'serv.p3.t': '3. Construcción', 'serv.p3.d': 'Desarrollo tu sitio con revisiones en cada etapa.',
+      'serv.p4.t': '4. Entrega + soporte', 'serv.p4.d': 'Publicación, capacitación y soporte el primer mes.',
+      'serv.final.title': '¿Cuál es la mejor opción para ti?',
+      'serv.final.p': 'Lo decidimos juntos en una llamada gratis. Sin presión, sin tecnicismos.',
+      'serv.final.btn': 'Agendar Consulta Gratis',
+
+      // Sobre mí
+      'about.h1': 'No soy el típico diseñador web.<br><span class="primary glow">Construyo infraestructura.</span>',
+      'about.p1': 'Hola, soy <strong>Alex Miguel Rojas</strong>. Muchos creadores de páginas web solo se preocupan por que el sitio se vea bonito. Yo me aseguro de que sea rápido, seguro y funcione impecablemente por debajo.',
+      'about.p2': 'Cuento con certificaciones oficiales en <strong>Google IT Support</strong>, además de <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> y <strong>Redes (CCNA) por Cisco</strong>. Esto significa que tu presencia digital estará construida sobre cimientos técnicos sólidos, configurada con altos estándares de seguridad y optimizada para no fallar.',
+      'about.p3': 'Mi enfoque ético de trabajo garantiza total transparencia: sin costos ocultos, sin lenguaje técnico confuso, solo resultados reales para hacer crecer tu negocio local.',
+      'about.btn': 'Hablemos de tu proyecto',
+
+      // FAQ
+      'faq.h1': 'Preguntas <span class="primary glow">frecuentes</span>',
+      'faq.intro': 'Lo que la mayoría de mis clientes pregunta antes de empezar.',
+      'faq.q1': '¿Cuánto tarda en estar lista mi página?',
+      'faq.a1': 'Un sitio tipo Escaparate Digital se entrega entre 5 y 10 días hábiles. Proyectos más grandes (catálogos, captura de leads) entre 2 y 4 semanas, dependiendo del contenido que me pases.',
+      'faq.q2': '¿Cuánto cuesta?',
+      'faq.a2': 'Cada proyecto se cotiza después de la consulta gratuita. Trabajo con precio fijo y cerrado: lo que acordamos es lo que pagas, sin sorpresas.',
+      'faq.q3': '¿Qué pasa con el dominio y el hosting?',
+      'faq.a3': 'Te asesoro en la compra del dominio (tu .com) y configuro el hosting más adecuado para tu caso. Puedes pagarlo a tu nombre, siempre quedas como dueño de todo.',
+      'faq.q4': '¿Ofreces soporte después de entregar?',
+      'faq.a4': 'Sí. El primer mes de cambios pequeños y soporte está incluido. Después puedes contratar un plan mensual o pagar por cambios puntuales.',
+      'faq.q5': '¿Necesito tener listos los textos y las fotos?',
+      'faq.a5': 'Es ideal, pero si no los tienes te ayudo con guías y ejemplos. Para fotos profesionales puedo recomendarte fotógrafos locales en Massachusetts.',
+      'faq.q6': '¿Trabajas solo en Massachusetts?',
+      'faq.a6': 'Mi enfoque principal son los negocios locales de Massachusetts, pero trabajo con clientes en cualquier parte de Estados Unidos y Latinoamérica, siempre en español o inglés.',
+      'faq.more': '¿No encontraste tu respuesta?',
+      'faq.btn': 'Pregúntame por WhatsApp',
+
+      // Contacto
+      'cont.h1': '<span class="primary glow">Hablemos</span> de tu proyecto',
+      'cont.intro': 'Cuéntame brevemente qué necesitas. Respondo en menos de 24 horas, en español.',
+      'cont.wa.t': 'WhatsApp directo', 'cont.wa.d': 'La forma más rápida de contactarme.',
+      'cont.mail.t': 'Correo electrónico', 'cont.mail.d': 'hola@alexoscp.com',
+      'cont.time.t': 'Tiempo de respuesta', 'cont.time.d': 'Menos de 24 horas, días hábiles.',
+      'cont.f.name': 'Nombre', 'cont.f.email': 'Correo', 'cont.f.msg': 'Cuéntame de tu proyecto',
+      'cont.f.btn': 'Enviar por WhatsApp',
+      'cont.f.note': 'Al enviar, se abrirá WhatsApp con tu mensaje ya redactado.',
+
+      // 404
+      '404.h1': 'Error 404<br><span class="primary glow">Página no encontrada.</span>',
+      '404.p': 'El enlace que abriste no existe o GitHub Pages todavía no terminó de publicar los archivos.',
+      '404.btn': 'Volver al inicio'
+    },
+
+    en: {
+      'brand': 'Get Digital Now!',
+      'nav.home': 'Home', 'nav.services': 'Services', 'nav.about': 'About', 'nav.faq': 'FAQ', 'nav.contact': 'Contact',
+      'nav.menu': 'Open menu',
+      'footer': 'Alex Rojas — Get Digital Now. Massachusetts, USA.',
+
+      'home.hero.title': 'Your Business Online,<br><span class="primary glow">Faster and Safer.</span>',
+      'home.hero.p': 'Fast, secure and hassle-free web design for business owners who want to win more clients. Built on top-tier server technology.',
+      'home.hero.cta': 'Get a Free Consultation',
+      'home.b1.t': 'Real speed', 'home.b1.d': 'Loads in under 2 seconds on mobile.',
+      'home.b2.t': 'Secure by design', 'home.b2.d': 'Cybersecurity best practices included.',
+      'home.b3.t': 'Ready for Google', 'home.b3.d': 'Technical SEO set up from day one.',
+      'home.serv.title': 'Get digital for <span class="primary">Your Business</span>',
+      'home.s1.t': 'The Digital Storefront', 'home.s1.d': 'Your business online in record time. A direct, optimized page so local clients find you on Google and contact you in one click.',
+      'home.s2.t': 'Visual Catalog', 'home.s2.d': 'Show the quality of your work to the world. Structured, professional galleries for contractors, photographers or creators who showcase projects.',
+      'home.s3.t': 'Lead Capture', 'home.s3.d': 'Filter out the curious. Strategic forms that send qualified leads straight to your inbox.',
+      'home.serv.link': 'See the detail of each service →',
+      'home.test.title': 'What my <span class="primary">clients</span> say',
+      'home.test.note': '(Sample testimonials)',
+      'home.t1.q': '"Alex delivered the site in 5 days. I started getting new client messages on WhatsApp that same week."',
+      'home.t1.r': 'Beauty salon, Lawrence MA',
+      'home.t2.q': '"He turned my work photos into a professional catalog. Now I close quotes without having to explain anything by phone."',
+      'home.t2.r': 'Painting contractor, Lowell MA',
+      'home.t3.q': '"He explains everything in plain Spanish, no jargon. The site looks great and loads super fast on mobile."',
+      'home.t3.r': 'Home bakery, Boston MA',
+      'home.cta.title': 'Ready to <span class="primary glow">start</span>?',
+      'home.cta.p': 'Tell me about your business in a free 20-minute call. No commitment, no jargon.',
+      'home.cta.btn': 'Let\'s talk on WhatsApp',
+
+      'serv.h1': 'My <span class="primary glow">Services</span>',
+      'serv.intro': 'Three solutions designed for different moments of your business. Each one ships with fast, secure and well-configured web infrastructure.',
+      'serv.1.t': 'The Digital Storefront',
+      'serv.1.d': 'A professional, simple and direct website so local clients find you and contact you.',
+      'serv.1.l1': 'Optimized one-page site',
+      'serv.1.l2': 'Direct WhatsApp button and map',
+      'serv.1.l3': 'Local SEO for Google Maps',
+      'serv.1.l4': 'Fast hosting and SSL certificate',
+      'serv.2.t': 'Visual Catalog',
+      'serv.2.d': 'Structured gallery to showcase your projects, products or finished work.',
+      'serv.2.l1': 'Gallery filtered by categories',
+      'serv.2.l2': 'Optimized images (fast loading)',
+      'serv.2.l3': 'Individual pages per project',
+      'serv.2.l4': 'Ready to share on social media',
+      'serv.3.t': 'Lead Capture',
+      'serv.3.d': 'Forms and funnels designed so you only get qualified clients.',
+      'serv.3.l1': 'Form that lands in your inbox',
+      'serv.3.l2': 'Questions to filter out the curious',
+      'serv.3.l3': 'WhatsApp integration',
+      'serv.3.l4': 'Instant notification for each lead',
+      'serv.proc.title': 'How we <span class="primary">work together</span>',
+      'serv.p1.t': '1. Free consultation', 'serv.p1.d': 'We chat for 20 minutes about your business and goals.',
+      'serv.p2.t': '2. Clear proposal', 'serv.p2.d': 'I send you in writing what\'s included, timing and a fixed price.',
+      'serv.p3.t': '3. Build', 'serv.p3.d': 'I develop your site with reviews at every stage.',
+      'serv.p4.t': '4. Delivery + support', 'serv.p4.d': 'Launch, training and support during the first month.',
+      'serv.final.title': 'Which option is best for you?',
+      'serv.final.p': 'We decide together on a free call. No pressure, no jargon.',
+      'serv.final.btn': 'Book a Free Consultation',
+
+      'about.h1': 'I\'m not your typical web designer.<br><span class="primary glow">I build infrastructure.</span>',
+      'about.p1': 'Hi, I\'m <strong>Alex Miguel Rojas</strong>. Many web designers only care about making the site look pretty. I make sure it\'s fast, secure and runs flawlessly underneath.',
+      'about.p2': 'I hold official certifications in <strong>Google IT Support</strong>, plus <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> and <strong>Networking (CCNA) by Cisco</strong>. That means your digital presence will be built on solid technical foundations, configured with high security standards and optimized so it doesn\'t fail.',
+      'about.p3': 'My ethical approach guarantees total transparency: no hidden costs, no confusing technical language, only real results to grow your local business.',
+      'about.btn': 'Let\'s talk about your project',
+
+      'faq.h1': 'Frequently <span class="primary glow">asked questions</span>',
+      'faq.intro': 'What most of my clients ask before starting.',
+      'faq.q1': 'How long until my site is ready?',
+      'faq.a1': 'A Digital Storefront site ships in 5 to 10 business days. Larger projects (catalogs, lead capture) take 2 to 4 weeks, depending on the content you provide.',
+      'faq.q2': 'How much does it cost?',
+      'faq.a2': 'Each project is quoted after the free consultation. I work with a fixed, closed price: what we agree on is what you pay, no surprises.',
+      'faq.q3': 'What about the domain and hosting?',
+      'faq.a3': 'I advise you on buying the domain (your .com) and configure the most suitable hosting for your case. You can pay in your name — you always remain the owner.',
+      'faq.q4': 'Do you offer support after delivery?',
+      'faq.a4': 'Yes. The first month of small changes and support is included. After that you can hire a monthly plan or pay per change.',
+      'faq.q5': 'Do I need to have the texts and photos ready?',
+      'faq.a5': 'It\'s ideal, but if you don\'t have them I help you with guides and examples. For professional photos I can recommend local photographers in Massachusetts.',
+      'faq.q6': 'Do you only work in Massachusetts?',
+      'faq.a6': 'My main focus is local Massachusetts businesses, but I work with clients anywhere in the US and Latin America, always in Spanish or English.',
+      'faq.more': 'Didn\'t find your answer?',
+      'faq.btn': 'Ask me on WhatsApp',
+
+      'cont.h1': '<span class="primary glow">Let\'s talk</span> about your project',
+      'cont.intro': 'Tell me briefly what you need. I reply in under 24 hours, in Spanish or English.',
+      'cont.wa.t': 'WhatsApp direct', 'cont.wa.d': 'The fastest way to reach me.',
+      'cont.mail.t': 'Email', 'cont.mail.d': 'hola@alexoscp.com',
+      'cont.time.t': 'Response time', 'cont.time.d': 'Under 24 hours, business days.',
+      'cont.f.name': 'Name', 'cont.f.email': 'Email', 'cont.f.msg': 'Tell me about your project',
+      'cont.f.btn': 'Send via WhatsApp',
+      'cont.f.note': 'On submit, WhatsApp will open with your message ready.',
+
+      '404.h1': 'Error 404<br><span class="primary glow">Page not found.</span>',
+      '404.p': 'The link you opened doesn\'t exist or GitHub Pages hasn\'t finished publishing yet.',
+      '404.btn': 'Back to home'
+    },
+
+    pt: {
+      'brand': 'Digitalize-se já!',
+      'nav.home': 'Início', 'nav.services': 'Serviços', 'nav.about': 'Sobre mim', 'nav.faq': 'FAQ', 'nav.contact': 'Contato',
+      'nav.menu': 'Abrir menu',
+      'footer': 'Alex Rojas — Digitalize-se já. Massachusetts, EUA.',
+
+      'home.hero.title': 'Seu Negócio Online,<br><span class="primary glow">Mais Rápido e Seguro.</span>',
+      'home.hero.p': 'Design web rápido, seguro e sem complicações para donos de negócios que querem conseguir mais clientes. Construído com tecnologia de servidores de alto nível.',
+      'home.hero.cta': 'Obter Consulta Gratuita',
+      'home.b1.t': 'Velocidade real', 'home.b1.d': 'Carrega em menos de 2 segundos no celular.',
+      'home.b2.t': 'Seguro por design', 'home.b2.d': 'Boas práticas de cibersegurança incluídas.',
+      'home.b3.t': 'Pronto para o Google', 'home.b3.d': 'SEO técnico configurado desde o primeiro dia.',
+      'home.serv.title': 'Digitalize-se já para <span class="primary">Seu Negócio</span>',
+      'home.s1.t': 'A Vitrine Digital', 'home.s1.d': 'Seu negócio online em tempo recorde. Uma página direta e otimizada para que os clientes locais te encontrem no Google e te contactem com um clique.',
+      'home.s2.t': 'Catálogo Visual', 'home.s2.d': 'Mostre a qualidade do seu trabalho ao mundo. Galerias estruturadas e profissionais para empreiteiros, fotógrafos ou criadores que exibem projetos.',
+      'home.s3.t': 'Captura de Leads', 'home.s3.d': 'Filtre os curiosos. Formulários estratégicos que enviam informações de clientes prontos para comprar direto ao seu email.',
+      'home.serv.link': 'Ver o detalhe de cada serviço →',
+      'home.test.title': 'O que dizem meus <span class="primary">clientes</span>',
+      'home.test.note': '(Depoimentos de exemplo)',
+      'home.t1.q': '"Alex me entregou a página em 5 dias. Comecei a receber mensagens de novos clientes pelo WhatsApp na mesma semana."',
+      'home.t1.r': 'Salão de beleza, Lawrence MA',
+      'home.t2.q': '"Transformou minhas fotos de trabalhos em um catálogo profissional. Agora fecho orçamentos sem ter que explicar nada por telefone."',
+      'home.t2.r': 'Empreiteiro de pintura, Lowell MA',
+      'home.t3.q': '"Explica tudo em espanhol claro, sem tecnicismos. A página é bonita e carrega super rápido no celular."',
+      'home.t3.r': 'Confeitaria caseira, Boston MA',
+      'home.cta.title': 'Pronto para <span class="primary glow">começar</span>?',
+      'home.cta.p': 'Me conte sobre seu negócio em uma chamada grátis de 20 minutos. Sem compromisso, sem tecnicismos.',
+      'home.cta.btn': 'Vamos falar pelo WhatsApp',
+
+      'serv.h1': 'Meus <span class="primary glow">Serviços</span>',
+      'serv.intro': 'Três soluções pensadas para diferentes momentos do seu negócio. Cada uma entregue com infraestrutura web rápida, segura e bem configurada.',
+      'serv.1.t': 'A Vitrine Digital',
+      'serv.1.d': 'Uma página web profissional, simples e direta para que os clientes locais te encontrem e te contatem.',
+      'serv.1.l1': 'Página única otimizada (one-page)',
+      'serv.1.l2': 'Botão direto para WhatsApp e mapa',
+      'serv.1.l3': 'SEO local para Google Maps',
+      'serv.1.l4': 'Hospedagem rápida e certificado SSL',
+      'serv.2.t': 'Catálogo Visual',
+      'serv.2.d': 'Galeria estruturada para exibir seus projetos, produtos ou trabalhos concluídos.',
+      'serv.2.l1': 'Galeria filtrável por categorias',
+      'serv.2.l2': 'Imagens otimizadas (carregamento rápido)',
+      'serv.2.l3': 'Páginas individuais por projeto',
+      'serv.2.l4': 'Pronto para compartilhar nas redes',
+      'serv.3.t': 'Captura de Leads',
+      'serv.3.d': 'Formulários e funis pensados para você receber apenas clientes qualificados.',
+      'serv.3.l1': 'Formulário que chega no seu email',
+      'serv.3.l2': 'Perguntas para filtrar curiosos',
+      'serv.3.l3': 'Integração com WhatsApp',
+      'serv.3.l4': 'Aviso instantâneo de cada lead',
+      'serv.proc.title': 'Como <span class="primary">trabalhamos juntos</span>',
+      'serv.p1.t': '1. Consulta gratuita', 'serv.p1.d': 'Conversamos 20 minutos sobre seu negócio e objetivos.',
+      'serv.p2.t': '2. Proposta clara', 'serv.p2.d': 'Te envio por escrito o que inclui, prazos e preço fixo.',
+      'serv.p3.t': '3. Construção', 'serv.p3.d': 'Desenvolvo seu site com revisões em cada etapa.',
+      'serv.p4.t': '4. Entrega + suporte', 'serv.p4.d': 'Publicação, treinamento e suporte no primeiro mês.',
+      'serv.final.title': 'Qual é a melhor opção para você?',
+      'serv.final.p': 'Decidimos juntos em uma chamada grátis. Sem pressão, sem tecnicismos.',
+      'serv.final.btn': 'Agendar Consulta Grátis',
+
+      'about.h1': 'Não sou o típico designer web.<br><span class="primary glow">Construo infraestrutura.</span>',
+      'about.p1': 'Olá, sou o <strong>Alex Miguel Rojas</strong>. Muitos criadores de páginas se preocupam apenas com o visual. Eu garanto que seja rápido, seguro e funcione impecavelmente por baixo.',
+      'about.p2': 'Tenho certificações oficiais em <strong>Google IT Support</strong>, além de <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> e <strong>Redes (CCNA) pela Cisco</strong>. Isso significa que sua presença digital terá fundações técnicas sólidas, com altos padrões de segurança e otimizada para não falhar.',
+      'about.p3': 'Minha abordagem ética garante total transparência: sem custos ocultos, sem linguagem técnica confusa, apenas resultados reais para fazer crescer seu negócio local.',
+      'about.btn': 'Vamos falar do seu projeto',
+
+      'faq.h1': 'Perguntas <span class="primary glow">frequentes</span>',
+      'faq.intro': 'O que a maioria dos meus clientes pergunta antes de começar.',
+      'faq.q1': 'Quanto tempo leva para minha página ficar pronta?',
+      'faq.a1': 'Um site tipo Vitrine Digital é entregue entre 5 e 10 dias úteis. Projetos maiores (catálogos, captura de leads) entre 2 e 4 semanas, dependendo do conteúdo que você me passar.',
+      'faq.q2': 'Quanto custa?',
+      'faq.a2': 'Cada projeto é orçado após a consulta gratuita. Trabalho com preço fixo e fechado: o que combinamos é o que você paga, sem surpresas.',
+      'faq.q3': 'E o domínio e a hospedagem?',
+      'faq.a3': 'Te oriento na compra do domínio (seu .com) e configuro a hospedagem mais adequada. Pode pagar no seu nome, você sempre fica como dono.',
+      'faq.q4': 'Você oferece suporte depois da entrega?',
+      'faq.a4': 'Sim. O primeiro mês de pequenas alterações e suporte está incluído. Depois pode contratar um plano mensal ou pagar por alterações pontuais.',
+      'faq.q5': 'Preciso ter os textos e fotos prontos?',
+      'faq.a5': 'É o ideal, mas se não tiver eu te ajudo com guias e exemplos. Para fotos profissionais posso recomendar fotógrafos locais em Massachusetts.',
+      'faq.q6': 'Você trabalha só em Massachusetts?',
+      'faq.a6': 'Meu foco principal são negócios locais de Massachusetts, mas trabalho com clientes em qualquer parte dos EUA e da América Latina, sempre em espanhol ou inglês.',
+      'faq.more': 'Não encontrou sua resposta?',
+      'faq.btn': 'Pergunte pelo WhatsApp',
+
+      'cont.h1': '<span class="primary glow">Vamos conversar</span> sobre seu projeto',
+      'cont.intro': 'Me conte brevemente o que precisa. Respondo em menos de 24 horas.',
+      'cont.wa.t': 'WhatsApp direto', 'cont.wa.d': 'A forma mais rápida de me contatar.',
+      'cont.mail.t': 'Email', 'cont.mail.d': 'hola@alexoscp.com',
+      'cont.time.t': 'Tempo de resposta', 'cont.time.d': 'Menos de 24 horas, dias úteis.',
+      'cont.f.name': 'Nome', 'cont.f.email': 'Email', 'cont.f.msg': 'Me conte do seu projeto',
+      'cont.f.btn': 'Enviar pelo WhatsApp',
+      'cont.f.note': 'Ao enviar, o WhatsApp abre com sua mensagem pronta.',
+
+      '404.h1': 'Erro 404<br><span class="primary glow">Página não encontrada.</span>',
+      '404.p': 'O link que você abriu não existe ou o GitHub Pages ainda não terminou de publicar.',
+      '404.btn': 'Voltar ao início'
+    },
+
+    it: {
+      'brand': 'Digitalizzati ora!',
+      'nav.home': 'Home', 'nav.services': 'Servizi', 'nav.about': 'Chi sono', 'nav.faq': 'FAQ', 'nav.contact': 'Contatti',
+      'nav.menu': 'Apri menu',
+      'footer': 'Alex Rojas — Digitalizzati ora. Massachusetts, USA.',
+
+      'home.hero.title': 'Il Tuo Business Online,<br><span class="primary glow">Più Veloce e Sicuro.</span>',
+      'home.hero.p': 'Design web veloce, sicuro e senza complicazioni per imprenditori che vogliono più clienti. Costruito con tecnologia di server di alto livello.',
+      'home.hero.cta': 'Ottieni una Consulenza Gratuita',
+      'home.b1.t': 'Velocità reale', 'home.b1.d': 'Carica in meno di 2 secondi su mobile.',
+      'home.b2.t': 'Sicuro per design', 'home.b2.d': 'Best practice di cybersicurezza incluse.',
+      'home.b3.t': 'Pronto per Google', 'home.b3.d': 'SEO tecnico configurato dal primo giorno.',
+      'home.serv.title': 'Digitalizzati ora per <span class="primary">il Tuo Business</span>',
+      'home.s1.t': 'La Vetrina Digitale', 'home.s1.d': 'Il tuo business online in tempo record. Una pagina diretta e ottimizzata perché i clienti locali ti trovino su Google e ti contattino con un clic.',
+      'home.s2.t': 'Catalogo Visivo', 'home.s2.d': 'Mostra la qualità del tuo lavoro al mondo. Gallerie strutturate e professionali per imprese, fotografi o creativi che mostrano progetti.',
+      'home.s3.t': 'Cattura Contatti', 'home.s3.d': 'Filtra i curiosi. Moduli strategici che inviano informazioni di clienti pronti all\'acquisto direttamente alla tua email.',
+      'home.serv.link': 'Vedi il dettaglio di ogni servizio →',
+      'home.test.title': 'Cosa dicono i miei <span class="primary">clienti</span>',
+      'home.test.note': '(Testimonianze di esempio)',
+      'home.t1.q': '"Alex mi ha consegnato il sito in 5 giorni. Ho iniziato a ricevere messaggi di nuovi clienti su WhatsApp la stessa settimana."',
+      'home.t1.r': 'Salone di bellezza, Lawrence MA',
+      'home.t2.q': '"Ha trasformato le foto dei miei lavori in un catalogo professionale. Ora chiudo i preventivi senza dover spiegare nulla al telefono."',
+      'home.t2.r': 'Imprenditore pittore, Lowell MA',
+      'home.t3.q': '"Spiega tutto in spagnolo chiaro, senza tecnicismi. Il sito è bello e carica velocissimo sul cellulare."',
+      'home.t3.r': 'Pasticceria casalinga, Boston MA',
+      'home.cta.title': 'Pronto a <span class="primary glow">iniziare</span>?',
+      'home.cta.p': 'Raccontami del tuo business in una chiamata gratuita di 20 minuti. Senza impegno, senza tecnicismi.',
+      'home.cta.btn': 'Parliamo su WhatsApp',
+
+      'serv.h1': 'I miei <span class="primary glow">Servizi</span>',
+      'serv.intro': 'Tre soluzioni pensate per momenti diversi del tuo business. Ognuna con infrastruttura web veloce, sicura e ben configurata.',
+      'serv.1.t': 'La Vetrina Digitale',
+      'serv.1.d': 'Un sito professionale, semplice e diretto perché i clienti locali ti trovino e ti contattino.',
+      'serv.1.l1': 'Sito ottimizzato a pagina singola',
+      'serv.1.l2': 'Pulsante diretto WhatsApp e mappa',
+      'serv.1.l3': 'SEO locale per Google Maps',
+      'serv.1.l4': 'Hosting veloce e certificato SSL',
+      'serv.2.t': 'Catalogo Visivo',
+      'serv.2.d': 'Galleria strutturata per esibire progetti, prodotti o lavori finiti.',
+      'serv.2.l1': 'Galleria filtrabile per categorie',
+      'serv.2.l2': 'Immagini ottimizzate (caricamento rapido)',
+      'serv.2.l3': 'Pagine singole per progetto',
+      'serv.2.l4': 'Pronto da condividere sui social',
+      'serv.3.t': 'Cattura Contatti',
+      'serv.3.d': 'Moduli e funnel pensati per ricevere solo clienti qualificati.',
+      'serv.3.l1': 'Modulo che arriva via email',
+      'serv.3.l2': 'Domande per filtrare i curiosi',
+      'serv.3.l3': 'Integrazione con WhatsApp',
+      'serv.3.l4': 'Notifica istantanea di ogni lead',
+      'serv.proc.title': 'Come <span class="primary">lavoriamo insieme</span>',
+      'serv.p1.t': '1. Consulenza gratuita', 'serv.p1.d': 'Parliamo 20 minuti del tuo business e dei tuoi obiettivi.',
+      'serv.p2.t': '2. Proposta chiara', 'serv.p2.d': 'Ti mando per iscritto cosa include, tempi e prezzo fisso.',
+      'serv.p3.t': '3. Costruzione', 'serv.p3.d': 'Sviluppo il tuo sito con revisioni a ogni tappa.',
+      'serv.p4.t': '4. Consegna + supporto', 'serv.p4.d': 'Pubblicazione, formazione e supporto il primo mese.',
+      'serv.final.title': 'Qual è l\'opzione migliore per te?',
+      'serv.final.p': 'Lo decidiamo insieme in una chiamata gratuita. Senza pressione, senza tecnicismi.',
+      'serv.final.btn': 'Prenota Consulenza Gratuita',
+
+      'about.h1': 'Non sono il tipico web designer.<br><span class="primary glow">Costruisco infrastruttura.</span>',
+      'about.p1': 'Ciao, sono <strong>Alex Miguel Rojas</strong>. Molti web designer pensano solo a rendere il sito carino. Io garantisco che sia veloce, sicuro e funzioni impeccabilmente sotto.',
+      'about.p2': 'Ho certificazioni ufficiali in <strong>Google IT Support</strong>, oltre a <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> e <strong>Networking (CCNA) di Cisco</strong>. Significa che la tua presenza digitale avrà fondamenta tecniche solide, alti standard di sicurezza e sarà ottimizzata per non fallire.',
+      'about.p3': 'Il mio approccio etico garantisce totale trasparenza: nessun costo nascosto, nessun linguaggio tecnico confuso, solo risultati reali per far crescere il tuo business locale.',
+      'about.btn': 'Parliamo del tuo progetto',
+
+      'faq.h1': 'Domande <span class="primary glow">frequenti</span>',
+      'faq.intro': 'Quello che la maggior parte dei miei clienti chiede prima di iniziare.',
+      'faq.q1': 'Quanto ci vuole perché il mio sito sia pronto?',
+      'faq.a1': 'Un sito tipo Vetrina Digitale viene consegnato in 5-10 giorni lavorativi. Progetti più grandi (cataloghi, cattura lead) in 2-4 settimane, a seconda del contenuto che mi fornisci.',
+      'faq.q2': 'Quanto costa?',
+      'faq.a2': 'Ogni progetto è preventivato dopo la consulenza gratuita. Lavoro a prezzo fisso e chiuso: quanto concordato è quanto paghi, senza sorprese.',
+      'faq.q3': 'Come funziona dominio e hosting?',
+      'faq.a3': 'Ti consiglio nell\'acquisto del dominio (il tuo .com) e configuro l\'hosting più adatto. Puoi pagarlo a tuo nome, resti sempre il proprietario di tutto.',
+      'faq.q4': 'Offri supporto dopo la consegna?',
+      'faq.a4': 'Sì. Il primo mese di piccole modifiche e supporto è incluso. Dopo puoi attivare un piano mensile o pagare per modifiche puntuali.',
+      'faq.q5': 'Devo avere già testi e foto pronti?',
+      'faq.a5': 'È ideale, ma se non li hai ti aiuto con guide ed esempi. Per foto professionali posso consigliarti fotografi locali in Massachusetts.',
+      'faq.q6': 'Lavori solo in Massachusetts?',
+      'faq.a6': 'Il mio focus principale sono le aziende locali del Massachusetts, ma lavoro con clienti ovunque negli USA e in America Latina, sempre in spagnolo o inglese.',
+      'faq.more': 'Non hai trovato la tua risposta?',
+      'faq.btn': 'Chiedimi su WhatsApp',
+
+      'cont.h1': '<span class="primary glow">Parliamo</span> del tuo progetto',
+      'cont.intro': 'Raccontami brevemente cosa ti serve. Rispondo in meno di 24 ore.',
+      'cont.wa.t': 'WhatsApp diretto', 'cont.wa.d': 'Il modo più veloce per contattarmi.',
+      'cont.mail.t': 'Email', 'cont.mail.d': 'hola@alexoscp.com',
+      'cont.time.t': 'Tempo di risposta', 'cont.time.d': 'Meno di 24 ore, giorni lavorativi.',
+      'cont.f.name': 'Nome', 'cont.f.email': 'Email', 'cont.f.msg': 'Raccontami del tuo progetto',
+      'cont.f.btn': 'Invia su WhatsApp',
+      'cont.f.note': 'Inviando, si aprirà WhatsApp con il tuo messaggio già pronto.',
+
+      '404.h1': 'Errore 404<br><span class="primary glow">Pagina non trovata.</span>',
+      '404.p': 'Il link che hai aperto non esiste o GitHub Pages non ha ancora finito di pubblicare.',
+      '404.btn': 'Torna alla home'
+    },
+
+    de: {
+      'brand': 'Jetzt digitalisieren!',
+      'nav.home': 'Start', 'nav.services': 'Leistungen', 'nav.about': 'Über mich', 'nav.faq': 'FAQ', 'nav.contact': 'Kontakt',
+      'nav.menu': 'Menü öffnen',
+      'footer': 'Alex Rojas — Jetzt digitalisieren. Massachusetts, USA.',
+
+      'home.hero.title': 'Ihr Geschäft Online,<br><span class="primary glow">Schneller und Sicherer.</span>',
+      'home.hero.p': 'Schnelles, sicheres und unkompliziertes Webdesign für Unternehmer, die mehr Kunden gewinnen wollen. Aufgebaut mit erstklassiger Server-Technologie.',
+      'home.hero.cta': 'Kostenlose Beratung erhalten',
+      'home.b1.t': 'Echte Geschwindigkeit', 'home.b1.d': 'Lädt in unter 2 Sekunden auf Mobilgeräten.',
+      'home.b2.t': 'Sicher by Design', 'home.b2.d': 'Best Practices der Cybersicherheit inklusive.',
+      'home.b3.t': 'Bereit für Google', 'home.b3.d': 'Technisches SEO ab dem ersten Tag eingerichtet.',
+      'home.serv.title': 'Jetzt digitalisieren für <span class="primary">Ihr Geschäft</span>',
+      'home.s1.t': 'Das Digitale Schaufenster', 'home.s1.d': 'Ihr Geschäft online in Rekordzeit. Eine direkte, optimierte Seite, damit lokale Kunden Sie auf Google finden und mit einem Klick kontaktieren.',
+      'home.s2.t': 'Visueller Katalog', 'home.s2.d': 'Zeigen Sie der Welt die Qualität Ihrer Arbeit. Strukturierte, professionelle Galerien für Handwerker, Fotografen oder Kreative.',
+      'home.s3.t': 'Lead-Erfassung', 'home.s3.d': 'Filtern Sie die Neugierigen aus. Strategische Formulare, die qualifizierte Leads direkt in Ihr Postfach senden.',
+      'home.serv.link': 'Details zu jedem Service ansehen →',
+      'home.test.title': 'Was meine <span class="primary">Kunden</span> sagen',
+      'home.test.note': '(Beispiel-Testimonials)',
+      'home.t1.q': '"Alex hat mir die Seite in 5 Tagen geliefert. Schon in derselben Woche kamen neue Kundenanfragen über WhatsApp."',
+      'home.t1.r': 'Schönheitssalon, Lawrence MA',
+      'home.t2.q': '"Er hat meine Arbeitsfotos in einen professionellen Katalog verwandelt. Jetzt schließe ich Angebote ab, ohne am Telefon erklären zu müssen."',
+      'home.t2.r': 'Maler-Unternehmer, Lowell MA',
+      'home.t3.q': '"Erklärt alles in klarem Spanisch, ohne Fachjargon. Die Seite sieht toll aus und lädt blitzschnell auf dem Handy."',
+      'home.t3.r': 'Hausgemachte Bäckerei, Boston MA',
+      'home.cta.title': 'Bereit <span class="primary glow">loszulegen</span>?',
+      'home.cta.p': 'Erzählen Sie mir in einem kostenlosen 20-Minuten-Gespräch von Ihrem Geschäft. Unverbindlich, ohne Fachjargon.',
+      'home.cta.btn': 'Lass uns auf WhatsApp sprechen',
+
+      'serv.h1': 'Meine <span class="primary glow">Leistungen</span>',
+      'serv.intro': 'Drei Lösungen für verschiedene Phasen Ihres Geschäfts. Jede mit schneller, sicherer und gut konfigurierter Web-Infrastruktur.',
+      'serv.1.t': 'Das Digitale Schaufenster',
+      'serv.1.d': 'Eine professionelle, einfache und direkte Website, damit lokale Kunden Sie finden und kontaktieren.',
+      'serv.1.l1': 'Optimierte One-Page-Website',
+      'serv.1.l2': 'Direkter WhatsApp-Button und Karte',
+      'serv.1.l3': 'Lokales SEO für Google Maps',
+      'serv.1.l4': 'Schnelles Hosting und SSL-Zertifikat',
+      'serv.2.t': 'Visueller Katalog',
+      'serv.2.d': 'Strukturierte Galerie zur Präsentation Ihrer Projekte, Produkte oder fertigen Arbeiten.',
+      'serv.2.l1': 'Nach Kategorien filterbare Galerie',
+      'serv.2.l2': 'Optimierte Bilder (schnelles Laden)',
+      'serv.2.l3': 'Einzelne Seiten pro Projekt',
+      'serv.2.l4': 'Bereit zum Teilen in sozialen Medien',
+      'serv.3.t': 'Lead-Erfassung',
+      'serv.3.d': 'Formulare und Funnels, damit Sie nur qualifizierte Kunden erhalten.',
+      'serv.3.l1': 'Formular landet in Ihrem Postfach',
+      'serv.3.l2': 'Fragen zum Filtern von Neugierigen',
+      'serv.3.l3': 'WhatsApp-Integration',
+      'serv.3.l4': 'Sofortige Benachrichtigung bei jedem Lead',
+      'serv.proc.title': 'Wie wir <span class="primary">zusammenarbeiten</span>',
+      'serv.p1.t': '1. Kostenlose Beratung', 'serv.p1.d': 'Wir sprechen 20 Minuten über Ihr Geschäft und Ihre Ziele.',
+      'serv.p2.t': '2. Klares Angebot', 'serv.p2.d': 'Sie erhalten schriftlich Umfang, Termine und Festpreis.',
+      'serv.p3.t': '3. Umsetzung', 'serv.p3.d': 'Ich entwickle Ihre Seite mit Reviews in jeder Phase.',
+      'serv.p4.t': '4. Übergabe + Support', 'serv.p4.d': 'Veröffentlichung, Schulung und Support im ersten Monat.',
+      'serv.final.title': 'Welche Option ist die richtige für Sie?',
+      'serv.final.p': 'Wir entscheiden gemeinsam in einem kostenlosen Gespräch. Ohne Druck, ohne Fachjargon.',
+      'serv.final.btn': 'Kostenlose Beratung buchen',
+
+      'about.h1': 'Ich bin nicht der typische Webdesigner.<br><span class="primary glow">Ich baue Infrastruktur.</span>',
+      'about.p1': 'Hallo, ich bin <strong>Alex Miguel Rojas</strong>. Viele Webdesigner kümmern sich nur darum, dass die Seite hübsch aussieht. Ich sorge dafür, dass sie schnell, sicher und im Hintergrund einwandfrei funktioniert.',
+      'about.p2': 'Ich habe offizielle Zertifizierungen in <strong>Google IT Support</strong>, sowie <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> und <strong>Netzwerke (CCNA) von Cisco</strong>. Ihre digitale Präsenz wird auf soliden technischen Fundamenten gebaut, mit hohen Sicherheitsstandards konfiguriert und auf Ausfallsicherheit optimiert.',
+      'about.p3': 'Mein ethischer Arbeitsansatz garantiert volle Transparenz: keine versteckten Kosten, keine verwirrende Fachsprache, nur echte Ergebnisse für Ihr lokales Geschäft.',
+      'about.btn': 'Lass uns über Ihr Projekt sprechen',
+
+      'faq.h1': 'Häufige <span class="primary glow">Fragen</span>',
+      'faq.intro': 'Was die meisten meiner Kunden vor dem Start fragen.',
+      'faq.q1': 'Wie lange dauert es, bis meine Seite fertig ist?',
+      'faq.a1': 'Eine Digital-Schaufenster-Seite wird in 5 bis 10 Werktagen geliefert. Größere Projekte (Kataloge, Lead-Erfassung) in 2 bis 4 Wochen, je nach Inhalt.',
+      'faq.q2': 'Was kostet es?',
+      'faq.a2': 'Jedes Projekt wird nach der kostenlosen Beratung angeboten. Ich arbeite mit Festpreis: Was wir vereinbaren, zahlen Sie — keine Überraschungen.',
+      'faq.q3': 'Was ist mit Domain und Hosting?',
+      'faq.a3': 'Ich berate Sie beim Kauf der Domain (Ihre .com) und konfiguriere das passende Hosting. Sie können es auf Ihren Namen bezahlen — Sie bleiben immer der Eigentümer.',
+      'faq.q4': 'Bieten Sie Support nach der Übergabe?',
+      'faq.a4': 'Ja. Der erste Monat mit kleinen Änderungen und Support ist enthalten. Danach können Sie einen Monatsplan abschließen oder pro Änderung zahlen.',
+      'faq.q5': 'Muss ich Texte und Fotos bereithalten?',
+      'faq.a5': 'Ideal, aber wenn nicht, helfe ich mit Leitfäden und Beispielen. Für professionelle Fotos kann ich lokale Fotografen in Massachusetts empfehlen.',
+      'faq.q6': 'Arbeiten Sie nur in Massachusetts?',
+      'faq.a6': 'Mein Hauptfokus sind lokale Geschäfte in Massachusetts, aber ich arbeite mit Kunden überall in den USA und Lateinamerika, immer auf Spanisch oder Englisch.',
+      'faq.more': 'Antwort nicht gefunden?',
+      'faq.btn': 'Frag mich auf WhatsApp',
+
+      'cont.h1': '<span class="primary glow">Sprechen wir</span> über Ihr Projekt',
+      'cont.intro': 'Erzählen Sie mir kurz, was Sie brauchen. Ich antworte in unter 24 Stunden.',
+      'cont.wa.t': 'WhatsApp direkt', 'cont.wa.d': 'Der schnellste Weg, mich zu erreichen.',
+      'cont.mail.t': 'E-Mail', 'cont.mail.d': 'hola@alexoscp.com',
+      'cont.time.t': 'Antwortzeit', 'cont.time.d': 'Unter 24 Stunden, an Werktagen.',
+      'cont.f.name': 'Name', 'cont.f.email': 'E-Mail', 'cont.f.msg': 'Erzählen Sie von Ihrem Projekt',
+      'cont.f.btn': 'Per WhatsApp senden',
+      'cont.f.note': 'Beim Senden öffnet sich WhatsApp mit Ihrer fertigen Nachricht.',
+
+      '404.h1': 'Fehler 404<br><span class="primary glow">Seite nicht gefunden.</span>',
+      '404.p': 'Der geöffnete Link existiert nicht oder GitHub Pages hat die Veröffentlichung noch nicht abgeschlossen.',
+      '404.btn': 'Zurück zur Startseite'
+    }
+  };
+
+  function getLang() {
+    var saved = localStorage.getItem('lang');
+    if (saved && T[saved]) return saved;
+    var nav = (navigator.language || 'es').slice(0, 2);
+    return T[nav] ? nav : 'es';
+  }
+
+  function apply(lang) {
+    var dict = T[lang] || T.es;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n');
+      if (dict[k] != null) el.textContent = dict[k];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-html');
+      if (dict[k] != null) el.innerHTML = dict[k];
+    });
+    document.querySelectorAll('[data-i18n-attr]').forEach(function (el) {
+      // format: "attr:key,attr:key"
+      el.getAttribute('data-i18n-attr').split(',').forEach(function (pair) {
+        var p = pair.trim().split(':');
+        if (p.length === 2 && dict[p[1]] != null) el.setAttribute(p[0], dict[p[1]]);
+      });
+    });
+  }
+
+  function injectSwitcher() {
+    var headerInner = document.querySelector('.header-inner');
+    if (!headerInner) return;
+    var current = getLang();
+    var wrap = document.createElement('div');
+    wrap.className = 'lang-switch';
+    var sel = document.createElement('select');
+    sel.setAttribute('aria-label', 'Language');
+    LANGS.forEach(function (l) {
+      var opt = document.createElement('option');
+      opt.value = l.code;
+      opt.textContent = l.flag + ' ' + l.label;
+      if (l.code === current) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change', function () {
+      localStorage.setItem('lang', sel.value);
+      apply(sel.value);
+    });
+    wrap.appendChild(sel);
+    // insertar antes del botón de menú móvil
+    var menuBtn = headerInner.querySelector('.menu-btn');
+    if (menuBtn) headerInner.insertBefore(wrap, menuBtn);
+    else headerInner.appendChild(wrap);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    injectSwitcher();
+    apply(getLang());
+  });
+})();

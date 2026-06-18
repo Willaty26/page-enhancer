@@ -16,39 +16,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="./styles.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"¿Cuánto tarda en estar lista mi página?","acceptedAnswer":{"@type":"Answer","text":"Un sitio tipo Escaparate Digital se entrega entre 5 y 10 días hábiles. Proyectos más grandes entre 2 y 4 semanas."}},
-{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Cada proyecto se cotiza después de la consulta gratuita. Trabajo con precio fijo y cerrado."}},
-{"@type":"Question","name":"¿Qué pasa con el dominio y el hosting?","acceptedAnswer":{"@type":"Answer","text":"Te asesoro en la compra del dominio y configuro el hosting más adecuado. Siempre quedas como dueño de todo."}},
-{"@type":"Question","name":"¿Ofreces soporte después de entregar?","acceptedAnswer":{"@type":"Answer","text":"Sí. El primer mes de cambios pequeños y soporte está incluido."}},
-{"@type":"Question","name":"¿Necesito tener listos los textos y las fotos?","acceptedAnswer":{"@type":"Answer","text":"Es ideal, pero si no los tienes te ayudo con guías y ejemplos."}},
-{"@type":"Question","name":"¿Trabajas solo en Massachusetts?","acceptedAnswer":{"@type":"Answer","text":"Mi enfoque principal son los negocios locales de Massachusetts, pero trabajo con clientes en cualquier parte de EE.UU. y Latinoamérica."}}
-]}
-</script>
 </head>
 <body>
 <header class="header">
   <div class="header-inner">
-    <a href="./" class="brand">Digitalizate ya!</a>
+    <a href="./" class="brand" data-i18n="brand">Digitalizate ya!</a>
     <nav class="nav">
-      <a href="./">Inicio</a>
-      <a href="./servicios.html">Servicios</a>
-      <a href="./sobre-mi.html">Sobre mí</a>
-      <a href="./faq.html" class="active">FAQ</a>
-      <a href="./contacto.html">Contacto</a>
+      <a href="./" data-i18n="nav.home">Inicio</a>
+      <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+      <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+      <a href="./faq.html" class="active" data-i18n="nav.faq">FAQ</a>
+      <a href="./contacto.html" data-i18n="nav.contact">Contacto</a>
       <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
     </nav>
-    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">
+    <button id="menuBtn" class="menu-btn" data-i18n-attr="aria-label:nav.menu" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
   <nav id="mobileNav" class="mobile-nav">
-    <a href="./">Inicio</a>
-    <a href="./servicios.html">Servicios</a>
-    <a href="./sobre-mi.html">Sobre mí</a>
-    <a href="./faq.html" class="active">FAQ</a>
-    <a href="./contacto.html">Contacto</a>
+    <a href="./" data-i18n="nav.home">Inicio</a>
+    <a href="./servicios.html" data-i18n="nav.services">Servicios</a>
+    <a href="./sobre-mi.html" data-i18n="nav.about">Sobre mí</a>
+    <a href="./faq.html" class="active" data-i18n="nav.faq">FAQ</a>
+    <a href="./contacto.html" data-i18n="nav.contact">Contacto</a>
     <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
   </nav>
 </header>
@@ -57,29 +47,30 @@
   <section>
     <div class="container" style="max-width:780px">
       <header class="center">
-        <h1>Preguntas <span class="primary glow">frecuentes</span></h1>
-        <p class="muted mt" style="max-width:520px;margin:16px auto 0">Lo que la mayoría de mis clientes pregunta antes de empezar.</p>
+        <h1 data-i18n-html="faq.h1">Preguntas <span class="primary glow">frecuentes</span></h1>
+        <p class="muted mt" style="max-width:520px;margin:16px auto 0" data-i18n="faq.intro">Lo que la mayoría de mis clientes pregunta antes de empezar.</p>
       </header>
 
       <div class="mt">
-        <details class="faq-item"><summary>¿Cuánto tarda en estar lista mi página?</summary><div class="answer">Un sitio tipo Escaparate Digital se entrega entre 5 y 10 días hábiles. Proyectos más grandes (catálogos, captura de leads) entre 2 y 4 semanas, dependiendo del contenido que me pases.</div></details>
-        <details class="faq-item"><summary>¿Cuánto cuesta?</summary><div class="answer">Cada proyecto se cotiza después de la consulta gratuita. Trabajo con precio fijo y cerrado: lo que acordamos es lo que pagas, sin sorpresas.</div></details>
-        <details class="faq-item"><summary>¿Qué pasa con el dominio y el hosting?</summary><div class="answer">Te asesoro en la compra del dominio (tu .com) y configuro el hosting más adecuado para tu caso. Puedes pagarlo a tu nombre, siempre quedas como dueño de todo.</div></details>
-        <details class="faq-item"><summary>¿Ofreces soporte después de entregar?</summary><div class="answer">Sí. El primer mes de cambios pequeños y soporte está incluido. Después puedes contratar un plan mensual o pagar por cambios puntuales.</div></details>
-        <details class="faq-item"><summary>¿Necesito tener listos los textos y las fotos?</summary><div class="answer">Es ideal, pero si no los tienes te ayudo con guías y ejemplos. Para fotos profesionales puedo recomendarte fotógrafos locales en Massachusetts.</div></details>
-        <details class="faq-item"><summary>¿Trabajas solo en Massachusetts?</summary><div class="answer">Mi enfoque principal son los negocios locales de Massachusetts, pero trabajo con clientes en cualquier parte de Estados Unidos y Latinoamérica, siempre en español o inglés.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q1">¿Cuánto tarda en estar lista mi página?</summary><div class="answer" data-i18n="faq.a1">Un sitio tipo Escaparate Digital se entrega entre 5 y 10 días hábiles. Proyectos más grandes (catálogos, captura de leads) entre 2 y 4 semanas, dependiendo del contenido que me pases.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q2">¿Cuánto cuesta?</summary><div class="answer" data-i18n="faq.a2">Cada proyecto se cotiza después de la consulta gratuita. Trabajo con precio fijo y cerrado: lo que acordamos es lo que pagas, sin sorpresas.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q3">¿Qué pasa con el dominio y el hosting?</summary><div class="answer" data-i18n="faq.a3">Te asesoro en la compra del dominio (tu .com) y configuro el hosting más adecuado para tu caso. Puedes pagarlo a tu nombre, siempre quedas como dueño de todo.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q4">¿Ofreces soporte después de entregar?</summary><div class="answer" data-i18n="faq.a4">Sí. El primer mes de cambios pequeños y soporte está incluido. Después puedes contratar un plan mensual o pagar por cambios puntuales.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q5">¿Necesito tener listos los textos y las fotos?</summary><div class="answer" data-i18n="faq.a5">Es ideal, pero si no los tienes te ayudo con guías y ejemplos. Para fotos profesionales puedo recomendarte fotógrafos locales en Massachusetts.</div></details>
+        <details class="faq-item"><summary data-i18n="faq.q6">¿Trabajas solo en Massachusetts?</summary><div class="answer" data-i18n="faq.a6">Mi enfoque principal son los negocios locales de Massachusetts, pero trabajo con clientes en cualquier parte de Estados Unidos y Latinoamérica, siempre en español o inglés.</div></details>
       </div>
 
       <div class="center mt">
-        <p class="muted">¿No encontraste tu respuesta?</p>
-        <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt">Pregúntame por WhatsApp</a>
+        <p class="muted" data-i18n="faq.more">¿No encontraste tu respuesta?</p>
+        <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta mt" data-i18n="faq.btn">Pregúntame por WhatsApp</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">© <span id="yr"></span> Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</footer>
+<footer class="footer">© <span id="yr"></span> <span data-i18n="footer">Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</span></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="./i18n.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>

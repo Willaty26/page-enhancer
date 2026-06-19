@@ -90,6 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts. Certificado en Google IT, Cisco y ciberseguridad." },
       { property: "og:description", content: "Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts. Certificado en Google IT, Cisco y ciberseguridad." },
       { name: "twitter:description", content: "Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts. Certificado en Google IT, Cisco y ciberseguridad." },
+      { name: "google-site-verification", content: "eOyENUeTd7RxO6C_3YhjrqSsDoU2p6P1msDloc423So" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -294,25 +294,42 @@ function HomePage() {
                 blurred: false,
                 href: "https://fabians-roofing-demo.lovable.app/",
               },
-            ].map((p) => (
-              <article
-                key={p.title}
-                className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
-              >
-                <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
-                  <img
-                    src={p.img}
-                    alt={p.alt}
-                    loading="lazy"
-                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
-                  />
-                </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 text-muted-foreground">{p.desc}</p>
-                </div>
-              </article>
-            ))}
+            ].map((p) => {
+              const Wrapper = p.href ? "a" : "div";
+              const wrapperProps = p.href
+                ? { href: p.href, target: "_blank", rel: "noopener noreferrer" }
+                : {};
+              return (
+                <article
+                  key={p.title}
+                  className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+                >
+                  <Wrapper {...wrapperProps} className="block">
+                    <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                      <img
+                        src={p.img}
+                        alt={p.alt}
+                        loading="lazy"
+                        className={`h-full w-full scale-105 object-cover transition-all duration-300 ${
+                          p.blurred
+                            ? "blur-[4px] saturate-95 group-hover:blur-[2.5px] group-hover:saturate-100"
+                            : "group-hover:scale-110"
+                        }`}
+                      />
+                    </div>
+                    <div className="p-7">
+                      <h3 className="text-xl font-bold">{p.title}</h3>
+                      <p className="mt-3 text-muted-foreground">{p.desc}</p>
+                      {p.href && (
+                        <span className="mt-4 inline-block text-sm font-semibold text-primary group-hover:text-glow">
+                          Ver demo en vivo →
+                        </span>
+                      )}
+                    </div>
+                  </Wrapper>
+                </article>
+              );
+            })}
           </div>
           <p className="mt-8 text-center text-xs text-muted-foreground">
             Detalles específicos ocultos por privacidad.

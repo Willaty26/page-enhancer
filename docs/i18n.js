@@ -521,6 +521,10 @@
       'home.port.1.d': 'Invito digitale con conto alla rovescia, galleria foto, mappa del luogo e conferma di presenza (RSVP).',
       'home.port.2.t': 'Invito Evento Speciale',
       'home.port.2.d': 'Invito di evento con dettagli del luogo, data, mappa interattiva e design personalizzato.',
+      'home.port.3.t': 'Sito Web per Fotografo Professionista',
+      'home.port.3.d': 'Sito completo per fotografo di matrimoni ed eventi: portfolio fotografico, pacchetti di servizio, sezione eventi e modulo di contatto.',
+      'home.port.4.t': 'Sito Web per Azienda di Coperture',
+      'home.port.4.d': 'Sito completo per azienda di coperture in Massachusetts: pagine di servizi, galleria progetti, chi siamo e modulo di contatto.',
       'home.port.privacy': 'Dettagli specifici nascosti per privacy.'
     },
 

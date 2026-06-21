@@ -114,7 +114,36 @@
       // 404
       '404.h1': 'Error 404<br><span class="primary glow">Página no encontrada.</span>',
       '404.p': 'El enlace que abriste no existe o GitHub Pages todavía no terminó de publicar los archivos.',
-      '404.btn': 'Volver al inicio'
+      '404.btn': 'Volver al inicio',
+
+      // Invitaciones (Home)
+      'home.inv.title': 'Invitaciones <span class="primary">Digitales</span>',
+      'home.inv.intro': 'Invitaciones digitales personalizadas para bodas, quinceañeras, baby showers y eventos especiales. Diseño único, rápido y elegante, accesible desde cualquier celular.',
+      'home.inv.p1.t': 'Básico', 'home.inv.p1.price': 'Desde $80',
+      'home.inv.p1.l1': 'Una página de invitación personalizada',
+      'home.inv.p1.l2': 'Diseño ajustado a la plantilla',
+      'home.inv.p1.l3': 'Hasta 1 ronda de cambios',
+      'home.inv.p2.t': 'Estándar', 'home.inv.p2.price': 'Desde $130', 'home.inv.p2.badge': 'Más Popular',
+      'home.inv.p2.l1': 'Invitación personalizada',
+      'home.inv.p2.l2': 'RSVP que llega directo a tu correo',
+      'home.inv.p2.l3': 'Galería de fotos',
+      'home.inv.p2.l4': 'Hasta 2 rondas de cambios',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Desde $180',
+      'home.inv.p3.l1': 'Todo lo del paquete Estándar',
+      'home.inv.p3.l2': 'Dominio personalizado el primer año',
+      'home.inv.p3.l3': 'Cuenta regresiva y mapa interactivo',
+      'home.inv.p3.l4': 'Hasta 3 rondas de cambios',
+      'home.inv.note': 'El precio final depende de los detalles del evento. Escríbeme por WhatsApp para tu cotización exacta.',
+      'home.inv.cta': 'Cotizar por WhatsApp',
+
+      // Portafolio (Home)
+      'home.port.title': 'Proyectos <span class="primary">realizados</span>',
+      'home.port.intro': 'Una muestra del estilo de invitaciones digitales que entrego. Datos sensibles difuminados por privacidad de los clientes.',
+      'home.port.1.t': 'Invitación de Boda Digital',
+      'home.port.1.d': 'Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).',
+      'home.port.2.t': 'Invitación de Retiro / Evento Especial',
+      'home.port.2.d': 'Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.',
+      'home.port.privacy': 'Detalles específicos ocultos por privacidad.'
     },
 
     en: {
@@ -209,7 +238,34 @@
 
       '404.h1': 'Error 404<br><span class="primary glow">Page not found.</span>',
       '404.p': 'The link you opened doesn\'t exist or GitHub Pages hasn\'t finished publishing yet.',
-      '404.btn': 'Back to home'
+      '404.btn': 'Back to home',
+
+      'home.inv.title': 'Digital <span class="primary">Invitations</span>',
+      'home.inv.intro': 'Custom digital invitations for weddings, quinceañeras, baby showers and special events. Unique, fast and elegant design, accessible from any phone.',
+      'home.inv.p1.t': 'Basic', 'home.inv.p1.price': 'From $80',
+      'home.inv.p1.l1': 'One custom invitation page',
+      'home.inv.p1.l2': 'Design adjusted to the template',
+      'home.inv.p1.l3': 'Up to 1 round of changes',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'From $130', 'home.inv.p2.badge': 'Most Popular',
+      'home.inv.p2.l1': 'Custom invitation',
+      'home.inv.p2.l2': 'RSVP delivered straight to your inbox',
+      'home.inv.p2.l3': 'Photo gallery',
+      'home.inv.p2.l4': 'Up to 2 rounds of changes',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'From $180',
+      'home.inv.p3.l1': 'Everything in Standard',
+      'home.inv.p3.l2': 'Custom domain included for the first year',
+      'home.inv.p3.l3': 'Countdown and interactive map',
+      'home.inv.p3.l4': 'Up to 3 rounds of changes',
+      'home.inv.note': 'The final price depends on the details of your event. Message me on WhatsApp for an exact quote.',
+      'home.inv.cta': 'Quote on WhatsApp',
+
+      'home.port.title': 'Recent <span class="primary">projects</span>',
+      'home.port.intro': 'A sample of the digital invitations I deliver. Sensitive details blurred to protect client privacy.',
+      'home.port.1.t': 'Digital Wedding Invitation',
+      'home.port.1.d': 'Digital invitation with countdown, photo gallery, venue map and RSVP confirmation.',
+      'home.port.2.t': 'Retirement / Special Event Invitation',
+      'home.port.2.d': 'Event invitation with venue details, date, interactive map and custom design.',
+      'home.port.privacy': 'Specific details hidden for privacy.'
     },
 
     pt: {
@@ -304,7 +360,34 @@
 
       '404.h1': 'Erro 404<br><span class="primary glow">Página não encontrada.</span>',
       '404.p': 'O link que você abriu não existe ou o GitHub Pages ainda não terminou de publicar.',
-      '404.btn': 'Voltar ao início'
+      '404.btn': 'Voltar ao início',
+
+      'home.inv.title': 'Convites <span class="primary">Digitais</span>',
+      'home.inv.intro': 'Convites digitais personalizados para casamentos, quinze anos, chá de bebê e eventos especiais. Design único, rápido e elegante, acessível de qualquer celular.',
+      'home.inv.p1.t': 'Básico', 'home.inv.p1.price': 'A partir de $80',
+      'home.inv.p1.l1': 'Uma página de convite personalizada',
+      'home.inv.p1.l2': 'Design ajustado ao template',
+      'home.inv.p1.l3': 'Até 1 rodada de alterações',
+      'home.inv.p2.t': 'Padrão', 'home.inv.p2.price': 'A partir de $130', 'home.inv.p2.badge': 'Mais Popular',
+      'home.inv.p2.l1': 'Convite personalizado',
+      'home.inv.p2.l2': 'RSVP que chega direto no seu email',
+      'home.inv.p2.l3': 'Galeria de fotos',
+      'home.inv.p2.l4': 'Até 2 rodadas de alterações',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'A partir de $180',
+      'home.inv.p3.l1': 'Tudo do pacote Padrão',
+      'home.inv.p3.l2': 'Domínio personalizado no primeiro ano',
+      'home.inv.p3.l3': 'Contagem regressiva e mapa interativo',
+      'home.inv.p3.l4': 'Até 3 rodadas de alterações',
+      'home.inv.note': 'O preço final depende dos detalhes do evento. Me chame no WhatsApp para um orçamento exato.',
+      'home.inv.cta': 'Orçar pelo WhatsApp',
+
+      'home.port.title': 'Projetos <span class="primary">realizados</span>',
+      'home.port.intro': 'Uma amostra do estilo de convites digitais que entrego. Dados sensíveis desfocados pela privacidade dos clientes.',
+      'home.port.1.t': 'Convite de Casamento Digital',
+      'home.port.1.d': 'Convite digital com contagem regressiva, galeria de fotos, mapa do local e confirmação de presença (RSVP).',
+      'home.port.2.t': 'Convite de Evento Especial',
+      'home.port.2.d': 'Convite de evento com detalhes do local, data, mapa interativo e design personalizado.',
+      'home.port.privacy': 'Detalhes específicos ocultos por privacidade.'
     },
 
     it: {
@@ -399,7 +482,34 @@
 
       '404.h1': 'Errore 404<br><span class="primary glow">Pagina non trovata.</span>',
       '404.p': 'Il link che hai aperto non esiste o GitHub Pages non ha ancora finito di pubblicare.',
-      '404.btn': 'Torna alla home'
+      '404.btn': 'Torna alla home',
+
+      'home.inv.title': 'Inviti <span class="primary">Digitali</span>',
+      'home.inv.intro': 'Inviti digitali personalizzati per matrimoni, quinceañeras, baby shower ed eventi speciali. Design unico, veloce ed elegante, accessibile da qualsiasi cellulare.',
+      'home.inv.p1.t': 'Base', 'home.inv.p1.price': 'Da $80',
+      'home.inv.p1.l1': 'Una pagina di invito personalizzata',
+      'home.inv.p1.l2': 'Design adattato al template',
+      'home.inv.p1.l3': 'Fino a 1 giro di modifiche',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'Da $130', 'home.inv.p2.badge': 'Più Popolare',
+      'home.inv.p2.l1': 'Invito personalizzato',
+      'home.inv.p2.l2': 'RSVP che arriva direttamente nella tua email',
+      'home.inv.p2.l3': 'Galleria fotografica',
+      'home.inv.p2.l4': 'Fino a 2 giri di modifiche',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Da $180',
+      'home.inv.p3.l1': 'Tutto del pacchetto Standard',
+      'home.inv.p3.l2': 'Dominio personalizzato incluso il primo anno',
+      'home.inv.p3.l3': 'Conto alla rovescia e mappa interattiva',
+      'home.inv.p3.l4': 'Fino a 3 giri di modifiche',
+      'home.inv.note': 'Il prezzo finale dipende dai dettagli dell\'evento. Scrivimi su WhatsApp per un preventivo esatto.',
+      'home.inv.cta': 'Preventivo su WhatsApp',
+
+      'home.port.title': 'Progetti <span class="primary">realizzati</span>',
+      'home.port.intro': 'Un esempio dello stile di inviti digitali che consegno. Dati sensibili sfocati per la privacy dei clienti.',
+      'home.port.1.t': 'Invito di Matrimonio Digitale',
+      'home.port.1.d': 'Invito digitale con conto alla rovescia, galleria foto, mappa del luogo e conferma di presenza (RSVP).',
+      'home.port.2.t': 'Invito Evento Speciale',
+      'home.port.2.d': 'Invito di evento con dettagli del luogo, data, mappa interattiva e design personalizzato.',
+      'home.port.privacy': 'Dettagli specifici nascosti per privacy.'
     },
 
     de: {
@@ -494,7 +604,34 @@
 
       '404.h1': 'Fehler 404<br><span class="primary glow">Seite nicht gefunden.</span>',
       '404.p': 'Der geöffnete Link existiert nicht oder GitHub Pages hat die Veröffentlichung noch nicht abgeschlossen.',
-      '404.btn': 'Zurück zur Startseite'
+      '404.btn': 'Zurück zur Startseite',
+
+      'home.inv.title': 'Digitale <span class="primary">Einladungen</span>',
+      'home.inv.intro': 'Maßgeschneiderte digitale Einladungen für Hochzeiten, Quinceañeras, Babypartys und besondere Anlässe. Einzigartiges, schnelles und elegantes Design, von jedem Handy aus erreichbar.',
+      'home.inv.p1.t': 'Basis', 'home.inv.p1.price': 'Ab $80',
+      'home.inv.p1.l1': 'Eine individuelle Einladungsseite',
+      'home.inv.p1.l2': 'Design an die Vorlage angepasst',
+      'home.inv.p1.l3': 'Bis zu 1 Änderungsrunde',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'Ab $130', 'home.inv.p2.badge': 'Am Beliebtesten',
+      'home.inv.p2.l1': 'Individuelle Einladung',
+      'home.inv.p2.l2': 'RSVP direkt in Ihr Postfach',
+      'home.inv.p2.l3': 'Fotogalerie',
+      'home.inv.p2.l4': 'Bis zu 2 Änderungsrunden',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Ab $180',
+      'home.inv.p3.l1': 'Alles aus dem Standard-Paket',
+      'home.inv.p3.l2': 'Eigene Domain im ersten Jahr inklusive',
+      'home.inv.p3.l3': 'Countdown und interaktive Karte',
+      'home.inv.p3.l4': 'Bis zu 3 Änderungsrunden',
+      'home.inv.note': 'Der Endpreis hängt von den Details der Veranstaltung ab. Schreiben Sie mir auf WhatsApp für ein genaues Angebot.',
+      'home.inv.cta': 'Angebot auf WhatsApp',
+
+      'home.port.title': 'Realisierte <span class="primary">Projekte</span>',
+      'home.port.intro': 'Eine Auswahl meiner digitalen Einladungen. Sensible Daten zum Schutz der Kunden unscharf dargestellt.',
+      'home.port.1.t': 'Digitale Hochzeitseinladung',
+      'home.port.1.d': 'Digitale Einladung mit Countdown, Fotogalerie, Karte des Veranstaltungsorts und RSVP-Bestätigung.',
+      'home.port.2.t': 'Einladung für besondere Anlässe',
+      'home.port.2.d': 'Veranstaltungseinladung mit Ortsdetails, Datum, interaktiver Karte und individuellem Design.',
+      'home.port.privacy': 'Spezifische Details aus Datenschutzgründen ausgeblendet.'
     }
   };
 
@@ -522,6 +659,11 @@
         var p = pair.trim().split(':');
         if (p.length === 2 && dict[p[1]] != null) el.setAttribute(p[0], dict[p[1]]);
       });
+    });
+    var imgLang = (lang === 'es') ? 'es' : 'en';
+    document.querySelectorAll('[data-i18n-img]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-img');
+      el.src = './img/portfolio/' + k + '_' + imgLang + '.webp';
     });
   }
 

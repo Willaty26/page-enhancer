@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search } from "lucide-react";
+import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search, Check } from "lucide-react";
 import { CtaButton } from "@/components/cta-button";
 import { WHATSAPP_URL } from "@/components/site-header";
 
@@ -122,6 +122,97 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Invitaciones Digitales — Precios */}
+      <section className="border-t border-border bg-card/40 px-5 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center text-3xl font-extrabold md:text-4xl">
+            Invitaciones <span className="text-primary">Digitales</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+            Invitaciones digitales personalizadas para bodas, quinceañeras, baby
+            showers y eventos especiales. Diseño único, rápido y elegante,
+            accesible desde cualquier celular.
+          </p>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Básico",
+                price: "Desde $80",
+                popular: false,
+                items: [
+                  "Una página de invitación personalizada",
+                  "Diseño ajustado a la plantilla",
+                  "Hasta 1 ronda de cambios",
+                ],
+              },
+              {
+                title: "Estándar",
+                price: "Desde $130",
+                popular: true,
+                items: [
+                  "Invitación personalizada",
+                  "RSVP que llega directo a tu correo",
+                  "Galería de fotos",
+                  "Hasta 2 rondas de cambios",
+                ],
+              },
+              {
+                title: "Premium",
+                price: "Desde $180",
+                popular: false,
+                items: [
+                  "Todo lo del paquete Estándar",
+                  "Dominio personalizado el primer año",
+                  "Cuenta regresiva y mapa interactivo",
+                  "Hasta 3 rondas de cambios",
+                ],
+              },
+            ].map((p) => (
+              <article
+                key={p.title}
+                className={`relative rounded-3xl border bg-card p-8 transition-all duration-300 hover:-translate-y-2 ${
+                  p.popular
+                    ? "border-primary/60 shadow-[var(--shadow-glow)]"
+                    : "border-border hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+                }`}
+              >
+                {p.popular && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-primary-foreground">
+                    Más Popular
+                  </span>
+                )}
+                <h3 className="text-xl font-bold">{p.title}</h3>
+                <div className="mt-2 text-3xl font-extrabold text-primary">
+                  {p.price}
+                </div>
+                <ul className="mt-6 space-y-3 text-sm">
+                  {p.items.map((it) => (
+                    <li key={it} className="flex items-start gap-2">
+                      <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <p className="mx-auto mt-10 max-w-xl text-center text-sm text-muted-foreground">
+            El precio final depende de los detalles del evento. Escríbeme por
+            WhatsApp para tu cotización exacta.
+          </p>
+          <div className="mt-6 text-center">
+            <CtaButton
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cotizar por WhatsApp
+            </CtaButton>
+          </div>
+        </div>
+      </section>
+
+
       {/* Testimonios */}
       <section className="border-t border-border bg-card/40 px-5 py-20">
         <div className="mx-auto max-w-6xl">
@@ -168,6 +259,58 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Portafolio */}
+      <section className="px-5 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center text-3xl font-extrabold md:text-4xl">
+            Proyectos <span className="text-primary">realizados</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+            Una muestra del estilo de invitaciones digitales que entrego. Datos
+            sensibles difuminados por privacidad de los clientes.
+          </p>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                title: "Invitación de Boda Digital",
+                desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
+                img: "/portfolio/wedding_es.webp",
+                alt: "Invitación de boda digital — vista previa difuminada por privacidad",
+              },
+              {
+                title: "Invitación de Retiro / Evento Especial",
+                desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
+                img: "/portfolio/retirement_es.webp",
+                alt: "Invitación de evento especial — vista previa difuminada por privacidad",
+              },
+            ].map((p) => (
+              <article
+                key={p.title}
+                className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+              >
+                <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                  <img
+                    src={p.img}
+                    alt={p.alt}
+                    loading="lazy"
+                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-xl font-bold">{p.title}</h3>
+                  <p className="mt-3 text-muted-foreground">{p.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-xs text-muted-foreground">
+            Detalles específicos ocultos por privacidad.
+          </p>
+        </div>
+      </section>
+
+
 
       {/* CTA final */}
       <section className="px-5 py-20 text-center">

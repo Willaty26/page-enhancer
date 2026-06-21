@@ -523,6 +523,11 @@
         if (p.length === 2 && dict[p[1]] != null) el.setAttribute(p[0], dict[p[1]]);
       });
     });
+    var imgLang = (lang === 'es') ? 'es' : 'en';
+    document.querySelectorAll('[data-i18n-img]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-img');
+      el.src = './img/portfolio/' + k + '_' + imgLang + '.webp';
+    });
   }
 
   function injectSwitcher() {

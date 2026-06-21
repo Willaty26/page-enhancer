@@ -338,12 +338,6 @@ function HomePage() {
                 </div>
               </article>
             ))}
-                <div className="p-7">
-                  <h3 className="text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 text-muted-foreground">{p.desc}</p>
-                </div>
-              </article>
-            ))}
           </div>
           <p className="mt-8 text-center text-xs text-muted-foreground">
             Detalles específicos ocultos por privacidad.

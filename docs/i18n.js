@@ -360,7 +360,34 @@
 
       '404.h1': 'Erro 404<br><span class="primary glow">Página não encontrada.</span>',
       '404.p': 'O link que você abriu não existe ou o GitHub Pages ainda não terminou de publicar.',
-      '404.btn': 'Voltar ao início'
+      '404.btn': 'Voltar ao início',
+
+      'home.inv.title': 'Convites <span class="primary">Digitais</span>',
+      'home.inv.intro': 'Convites digitais personalizados para casamentos, quinze anos, chá de bebê e eventos especiais. Design único, rápido e elegante, acessível de qualquer celular.',
+      'home.inv.p1.t': 'Básico', 'home.inv.p1.price': 'A partir de $80',
+      'home.inv.p1.l1': 'Uma página de convite personalizada',
+      'home.inv.p1.l2': 'Design ajustado ao template',
+      'home.inv.p1.l3': 'Até 1 rodada de alterações',
+      'home.inv.p2.t': 'Padrão', 'home.inv.p2.price': 'A partir de $130', 'home.inv.p2.badge': 'Mais Popular',
+      'home.inv.p2.l1': 'Convite personalizado',
+      'home.inv.p2.l2': 'RSVP que chega direto no seu email',
+      'home.inv.p2.l3': 'Galeria de fotos',
+      'home.inv.p2.l4': 'Até 2 rodadas de alterações',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'A partir de $180',
+      'home.inv.p3.l1': 'Tudo do pacote Padrão',
+      'home.inv.p3.l2': 'Domínio personalizado no primeiro ano',
+      'home.inv.p3.l3': 'Contagem regressiva e mapa interativo',
+      'home.inv.p3.l4': 'Até 3 rodadas de alterações',
+      'home.inv.note': 'O preço final depende dos detalhes do evento. Me chame no WhatsApp para um orçamento exato.',
+      'home.inv.cta': 'Orçar pelo WhatsApp',
+
+      'home.port.title': 'Projetos <span class="primary">realizados</span>',
+      'home.port.intro': 'Uma amostra do estilo de convites digitais que entrego. Dados sensíveis desfocados pela privacidade dos clientes.',
+      'home.port.1.t': 'Convite de Casamento Digital',
+      'home.port.1.d': 'Convite digital com contagem regressiva, galeria de fotos, mapa do local e confirmação de presença (RSVP).',
+      'home.port.2.t': 'Convite de Evento Especial',
+      'home.port.2.d': 'Convite de evento com detalhes do local, data, mapa interativo e design personalizado.',
+      'home.port.privacy': 'Detalhes específicos ocultos por privacidade.'
     },
 
     it: {

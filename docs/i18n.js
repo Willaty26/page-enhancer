@@ -604,7 +604,34 @@
 
       '404.h1': 'Fehler 404<br><span class="primary glow">Seite nicht gefunden.</span>',
       '404.p': 'Der geöffnete Link existiert nicht oder GitHub Pages hat die Veröffentlichung noch nicht abgeschlossen.',
-      '404.btn': 'Zurück zur Startseite'
+      '404.btn': 'Zurück zur Startseite',
+
+      'home.inv.title': 'Digitale <span class="primary">Einladungen</span>',
+      'home.inv.intro': 'Maßgeschneiderte digitale Einladungen für Hochzeiten, Quinceañeras, Babypartys und besondere Anlässe. Einzigartiges, schnelles und elegantes Design, von jedem Handy aus erreichbar.',
+      'home.inv.p1.t': 'Basis', 'home.inv.p1.price': 'Ab $80',
+      'home.inv.p1.l1': 'Eine individuelle Einladungsseite',
+      'home.inv.p1.l2': 'Design an die Vorlage angepasst',
+      'home.inv.p1.l3': 'Bis zu 1 Änderungsrunde',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'Ab $130', 'home.inv.p2.badge': 'Am Beliebtesten',
+      'home.inv.p2.l1': 'Individuelle Einladung',
+      'home.inv.p2.l2': 'RSVP direkt in Ihr Postfach',
+      'home.inv.p2.l3': 'Fotogalerie',
+      'home.inv.p2.l4': 'Bis zu 2 Änderungsrunden',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Ab $180',
+      'home.inv.p3.l1': 'Alles aus dem Standard-Paket',
+      'home.inv.p3.l2': 'Eigene Domain im ersten Jahr inklusive',
+      'home.inv.p3.l3': 'Countdown und interaktive Karte',
+      'home.inv.p3.l4': 'Bis zu 3 Änderungsrunden',
+      'home.inv.note': 'Der Endpreis hängt von den Details der Veranstaltung ab. Schreiben Sie mir auf WhatsApp für ein genaues Angebot.',
+      'home.inv.cta': 'Angebot auf WhatsApp',
+
+      'home.port.title': 'Realisierte <span class="primary">Projekte</span>',
+      'home.port.intro': 'Eine Auswahl meiner digitalen Einladungen. Sensible Daten zum Schutz der Kunden unscharf dargestellt.',
+      'home.port.1.t': 'Digitale Hochzeitseinladung',
+      'home.port.1.d': 'Digitale Einladung mit Countdown, Fotogalerie, Karte des Veranstaltungsorts und RSVP-Bestätigung.',
+      'home.port.2.t': 'Einladung für besondere Anlässe',
+      'home.port.2.d': 'Veranstaltungseinladung mit Ortsdetails, Datum, interaktiver Karte und individuellem Design.',
+      'home.port.privacy': 'Spezifische Details aus Datenschutzgründen ausgeblendet.'
     }
   };
 

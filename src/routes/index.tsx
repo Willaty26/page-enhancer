@@ -270,28 +270,19 @@ function HomePage() {
             Una muestra del estilo de invitaciones digitales que entrego. Datos
             sensibles difuminados por privacidad de los clientes.
           </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {[
               {
                 title: "Invitación de Boda Digital",
                 desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
                 img: "/portfolio/wedding_es.webp",
                 alt: "Invitación de boda digital — vista previa difuminada por privacidad",
-                blurred: true,
               },
               {
                 title: "Invitación de Retiro / Evento Especial",
                 desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
                 img: "/portfolio/retirement_es.webp",
                 alt: "Invitación de evento especial — vista previa difuminada por privacidad",
-                blurred: true,
-              },
-              {
-                title: "Sitio Web para Fotógrafo Profesional",
-                desc: "Sitio completo para fotógrafo de bodas y eventos: portafolio de fotos, paquetes de servicio, sección de eventos y formulario de contacto.",
-                img: "/portfolio/photographer.webp",
-                alt: "Sitio web demo para fotógrafo profesional",
-                blurred: false,
               },
             ].map((p) => (
               <article
@@ -303,11 +294,7 @@ function HomePage() {
                     src={p.img}
                     alt={p.alt}
                     loading="lazy"
-                    className={
-                      p.blurred
-                        ? "h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
-                        : "h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    }
+                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
                   />
                 </div>
                 <div className="p-7">

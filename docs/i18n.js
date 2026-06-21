@@ -143,6 +143,10 @@
       'home.port.1.d': 'Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).',
       'home.port.2.t': 'Invitación de Retiro / Evento Especial',
       'home.port.2.d': 'Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.',
+      'home.port.3.t': 'Sitio Web para Fotógrafo Profesional',
+      'home.port.3.d': 'Sitio completo para fotógrafo de bodas y eventos: portafolio de fotos, paquetes de servicio, sección de eventos y formulario de contacto.',
+      'home.port.4.t': 'Sitio Web para Empresa de Roofing',
+      'home.port.4.d': 'Sitio completo para empresa de techado en Massachusetts: páginas de servicios, galería de proyectos, sobre nosotros y formulario de contacto.',
       'home.port.privacy': 'Detalles específicos ocultos por privacidad.'
     },
 
@@ -265,6 +269,10 @@
       'home.port.1.d': 'Digital invitation with countdown, photo gallery, venue map and RSVP confirmation.',
       'home.port.2.t': 'Retirement / Special Event Invitation',
       'home.port.2.d': 'Event invitation with venue details, date, interactive map and custom design.',
+      'home.port.3.t': 'Website for Professional Photographer',
+      'home.port.3.d': 'Complete site for a wedding and event photographer: photo portfolio, service packages, events section and contact form.',
+      'home.port.4.t': 'Website for Roofing Company',
+      'home.port.4.d': 'Complete site for a Massachusetts roofing company: service pages, project gallery, about us and contact form.',
       'home.port.privacy': 'Specific details hidden for privacy.'
     },
 
@@ -387,6 +395,10 @@
       'home.port.1.d': 'Convite digital com contagem regressiva, galeria de fotos, mapa do local e confirmação de presença (RSVP).',
       'home.port.2.t': 'Convite de Evento Especial',
       'home.port.2.d': 'Convite de evento com detalhes do local, data, mapa interativo e design personalizado.',
+      'home.port.3.t': 'Site para Fotógrafo Profissional',
+      'home.port.3.d': 'Site completo para fotógrafo de casamentos e eventos: portfólio de fotos, pacotes de serviço, seção de eventos e formulário de contato.',
+      'home.port.4.t': 'Site para Empresa de Telhados',
+      'home.port.4.d': 'Site completo para empresa de telhados em Massachusetts: páginas de serviços, galeria de projetos, sobre nós e formulário de contato.',
       'home.port.privacy': 'Detalhes específicos ocultos por privacidade.'
     },
 
@@ -509,6 +521,10 @@
       'home.port.1.d': 'Invito digitale con conto alla rovescia, galleria foto, mappa del luogo e conferma di presenza (RSVP).',
       'home.port.2.t': 'Invito Evento Speciale',
       'home.port.2.d': 'Invito di evento con dettagli del luogo, data, mappa interattiva e design personalizzato.',
+      'home.port.3.t': 'Sito Web per Fotografo Professionista',
+      'home.port.3.d': 'Sito completo per fotografo di matrimoni ed eventi: portfolio fotografico, pacchetti di servizio, sezione eventi e modulo di contatto.',
+      'home.port.4.t': 'Sito Web per Azienda di Coperture',
+      'home.port.4.d': 'Sito completo per azienda di coperture in Massachusetts: pagine di servizi, galleria progetti, chi siamo e modulo di contatto.',
       'home.port.privacy': 'Dettagli specifici nascosti per privacy.'
     },
 
@@ -631,6 +647,10 @@
       'home.port.1.d': 'Digitale Einladung mit Countdown, Fotogalerie, Karte des Veranstaltungsorts und RSVP-Bestätigung.',
       'home.port.2.t': 'Einladung für besondere Anlässe',
       'home.port.2.d': 'Veranstaltungseinladung mit Ortsdetails, Datum, interaktiver Karte und individuellem Design.',
+      'home.port.3.t': 'Website für professionellen Fotografen',
+      'home.port.3.d': 'Komplette Website für Hochzeits- und Eventfotografen: Foto-Portfolio, Service-Pakete, Event-Bereich und Kontaktformular.',
+      'home.port.4.t': 'Website für Dachdeckerunternehmen',
+      'home.port.4.d': 'Komplette Website für ein Dachdeckerunternehmen in Massachusetts: Service-Seiten, Projektgalerie, Über uns und Kontaktformular.',
       'home.port.privacy': 'Spezifische Details aus Datenschutzgründen ausgeblendet.'
     }
   };

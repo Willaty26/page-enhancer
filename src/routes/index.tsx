@@ -277,26 +277,61 @@ function HomePage() {
                 desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
                 img: "/portfolio/wedding_es.webp",
                 alt: "Invitación de boda digital — vista previa difuminada por privacidad",
+                blur: true,
+                href: undefined as string | undefined,
               },
               {
                 title: "Invitación de Retiro / Evento Especial",
                 desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
                 img: "/portfolio/retirement_es.webp",
                 alt: "Invitación de evento especial — vista previa difuminada por privacidad",
+                blur: true,
+                href: undefined as string | undefined,
+              },
+              {
+                title: "Sitio Web para Fotógrafo Profesional",
+                desc: "Sitio completo para fotógrafo de bodas y eventos: portafolio de fotos, paquetes de servicio, sección de eventos y formulario de contacto.",
+                img: "/portfolio/photographer.webp",
+                alt: "Sitio web demo para fotógrafo profesional",
+                blur: false,
+                href: "https://page-cam-demo.lovable.app/",
+              },
+              {
+                title: "Sitio Web para Empresa de Roofing",
+                desc: "Sitio completo para empresa de techado en Massachusetts: páginas de servicios, galería de proyectos, sobre nosotros y formulario de contacto.",
+                img: "/portfolio/roofing.webp",
+                alt: "Sitio web demo para empresa de roofing",
+                blur: false,
+                href: "https://fabians-roofing-demo.lovable.app/",
               },
             ].map((p) => (
               <article
                 key={p.title}
                 className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
               >
-                <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
-                  <img
-                    src={p.img}
-                    alt={p.alt}
-                    loading="lazy"
-                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
-                  />
-                </div>
+                {(() => {
+                  const imgEl = (
+                    <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                      <img
+                        src={p.img}
+                        alt={p.alt}
+                        loading="lazy"
+                        className={
+                          p.blur
+                            ? "h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
+                            : "h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                        }
+                      />
+                    </div>
+                  );
+                  return p.href ? (
+                    <a href={p.href} target="_blank" rel="noopener noreferrer">
+                      {imgEl}
+                    </a>
+                  ) : (
+                    imgEl
+                  );
+                })()}
                 <div className="p-7">
                   <h3 className="text-xl font-bold">{p.title}</h3>
                   <p className="mt-3 text-muted-foreground">{p.desc}</p>

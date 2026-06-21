@@ -238,7 +238,34 @@
 
       '404.h1': 'Error 404<br><span class="primary glow">Page not found.</span>',
       '404.p': 'The link you opened doesn\'t exist or GitHub Pages hasn\'t finished publishing yet.',
-      '404.btn': 'Back to home'
+      '404.btn': 'Back to home',
+
+      'home.inv.title': 'Digital <span class="primary">Invitations</span>',
+      'home.inv.intro': 'Custom digital invitations for weddings, quinceañeras, baby showers and special events. Unique, fast and elegant design, accessible from any phone.',
+      'home.inv.p1.t': 'Basic', 'home.inv.p1.price': 'From $80',
+      'home.inv.p1.l1': 'One custom invitation page',
+      'home.inv.p1.l2': 'Design adjusted to the template',
+      'home.inv.p1.l3': 'Up to 1 round of changes',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'From $130', 'home.inv.p2.badge': 'Most Popular',
+      'home.inv.p2.l1': 'Custom invitation',
+      'home.inv.p2.l2': 'RSVP delivered straight to your inbox',
+      'home.inv.p2.l3': 'Photo gallery',
+      'home.inv.p2.l4': 'Up to 2 rounds of changes',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'From $180',
+      'home.inv.p3.l1': 'Everything in Standard',
+      'home.inv.p3.l2': 'Custom domain included for the first year',
+      'home.inv.p3.l3': 'Countdown and interactive map',
+      'home.inv.p3.l4': 'Up to 3 rounds of changes',
+      'home.inv.note': 'The final price depends on the details of your event. Message me on WhatsApp for an exact quote.',
+      'home.inv.cta': 'Quote on WhatsApp',
+
+      'home.port.title': 'Recent <span class="primary">projects</span>',
+      'home.port.intro': 'A sample of the digital invitations I deliver. Sensitive details blurred to protect client privacy.',
+      'home.port.1.t': 'Digital Wedding Invitation',
+      'home.port.1.d': 'Digital invitation with countdown, photo gallery, venue map and RSVP confirmation.',
+      'home.port.2.t': 'Retirement / Special Event Invitation',
+      'home.port.2.d': 'Event invitation with venue details, date, interactive map and custom design.',
+      'home.port.privacy': 'Specific details hidden for privacy.'
     },
 
     pt: {

@@ -231,10 +231,10 @@ function HomePage() {
                   "Alex me entregó la página en 5 días. Empecé a recibir mensajes de clientes nuevos por WhatsApp esa misma semana.",
               },
               {
-                name: "Carlos Pérez",
-                role: "Contratista de pintura, Lowell MA",
+                name: "Giana Pérez",
+                role: "Invitación de bodas, Lowell MA",
                 quote:
-                  "Subió mis fotos de trabajos como un catálogo profesional. Ahora cierro presupuestos sin tener que explicar nada por teléfono.",
+                  "Me encantó todo, se hizo tal como lo quería, con todo mis detalles, todo lo hablado. Les recomiendo hacer sus invitaciones y sus páginas web con él. Buen precio y a tu gusto. Todos mis invitados quedaron encantados. No se van a arrepentir.",
               },
               {
                 name: "Diana Vargas",

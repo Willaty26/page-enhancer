@@ -260,6 +260,58 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Portafolio */}
+      <section className="px-5 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center text-3xl font-extrabold md:text-4xl">
+            Proyectos <span className="text-primary">realizados</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+            Una muestra del estilo de invitaciones digitales que entrego. Datos
+            sensibles difuminados por privacidad de los clientes.
+          </p>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {[
+              {
+                title: "Invitación de Boda Digital",
+                desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
+                img: "/portfolio/wedding_es.webp",
+                alt: "Invitación de boda digital — vista previa difuminada por privacidad",
+              },
+              {
+                title: "Invitación de Retiro / Evento Especial",
+                desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
+                img: "/portfolio/retirement_es.webp",
+                alt: "Invitación de evento especial — vista previa difuminada por privacidad",
+              },
+            ].map((p) => (
+              <article
+                key={p.title}
+                className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+              >
+                <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                  <img
+                    src={p.img}
+                    alt={p.alt}
+                    loading="lazy"
+                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="text-xl font-bold">{p.title}</h3>
+                  <p className="mt-3 text-muted-foreground">{p.desc}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-xs text-muted-foreground">
+            Detalles específicos ocultos por privacidad.
+          </p>
+        </div>
+      </section>
+
+
+
       {/* CTA final */}
       <section className="px-5 py-20 text-center">
         <h2 className="text-3xl font-extrabold md:text-4xl">

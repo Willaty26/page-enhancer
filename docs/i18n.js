@@ -482,7 +482,34 @@
 
       '404.h1': 'Errore 404<br><span class="primary glow">Pagina non trovata.</span>',
       '404.p': 'Il link che hai aperto non esiste o GitHub Pages non ha ancora finito di pubblicare.',
-      '404.btn': 'Torna alla home'
+      '404.btn': 'Torna alla home',
+
+      'home.inv.title': 'Inviti <span class="primary">Digitali</span>',
+      'home.inv.intro': 'Inviti digitali personalizzati per matrimoni, quinceañeras, baby shower ed eventi speciali. Design unico, veloce ed elegante, accessibile da qualsiasi cellulare.',
+      'home.inv.p1.t': 'Base', 'home.inv.p1.price': 'Da $80',
+      'home.inv.p1.l1': 'Una pagina di invito personalizzata',
+      'home.inv.p1.l2': 'Design adattato al template',
+      'home.inv.p1.l3': 'Fino a 1 giro di modifiche',
+      'home.inv.p2.t': 'Standard', 'home.inv.p2.price': 'Da $130', 'home.inv.p2.badge': 'Più Popolare',
+      'home.inv.p2.l1': 'Invito personalizzato',
+      'home.inv.p2.l2': 'RSVP che arriva direttamente nella tua email',
+      'home.inv.p2.l3': 'Galleria fotografica',
+      'home.inv.p2.l4': 'Fino a 2 giri di modifiche',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Da $180',
+      'home.inv.p3.l1': 'Tutto del pacchetto Standard',
+      'home.inv.p3.l2': 'Dominio personalizzato incluso il primo anno',
+      'home.inv.p3.l3': 'Conto alla rovescia e mappa interattiva',
+      'home.inv.p3.l4': 'Fino a 3 giri di modifiche',
+      'home.inv.note': 'Il prezzo finale dipende dai dettagli dell\'evento. Scrivimi su WhatsApp per un preventivo esatto.',
+      'home.inv.cta': 'Preventivo su WhatsApp',
+
+      'home.port.title': 'Progetti <span class="primary">realizzati</span>',
+      'home.port.intro': 'Un esempio dello stile di inviti digitali che consegno. Dati sensibili sfocati per la privacy dei clienti.',
+      'home.port.1.t': 'Invito di Matrimonio Digitale',
+      'home.port.1.d': 'Invito digitale con conto alla rovescia, galleria foto, mappa del luogo e conferma di presenza (RSVP).',
+      'home.port.2.t': 'Invito Evento Speciale',
+      'home.port.2.d': 'Invito di evento con dettagli del luogo, data, mappa interattiva e design personalizzato.',
+      'home.port.privacy': 'Dettagli specifici nascosti per privacy.'
     },
 
     de: {

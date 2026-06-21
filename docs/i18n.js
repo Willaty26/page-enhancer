@@ -114,7 +114,36 @@
       // 404
       '404.h1': 'Error 404<br><span class="primary glow">Página no encontrada.</span>',
       '404.p': 'El enlace que abriste no existe o GitHub Pages todavía no terminó de publicar los archivos.',
-      '404.btn': 'Volver al inicio'
+      '404.btn': 'Volver al inicio',
+
+      // Invitaciones (Home)
+      'home.inv.title': 'Invitaciones <span class="primary">Digitales</span>',
+      'home.inv.intro': 'Invitaciones digitales personalizadas para bodas, quinceañeras, baby showers y eventos especiales. Diseño único, rápido y elegante, accesible desde cualquier celular.',
+      'home.inv.p1.t': 'Básico', 'home.inv.p1.price': 'Desde $80',
+      'home.inv.p1.l1': 'Una página de invitación personalizada',
+      'home.inv.p1.l2': 'Diseño ajustado a la plantilla',
+      'home.inv.p1.l3': 'Hasta 1 ronda de cambios',
+      'home.inv.p2.t': 'Estándar', 'home.inv.p2.price': 'Desde $130', 'home.inv.p2.badge': 'Más Popular',
+      'home.inv.p2.l1': 'Invitación personalizada',
+      'home.inv.p2.l2': 'RSVP que llega directo a tu correo',
+      'home.inv.p2.l3': 'Galería de fotos',
+      'home.inv.p2.l4': 'Hasta 2 rondas de cambios',
+      'home.inv.p3.t': 'Premium', 'home.inv.p3.price': 'Desde $180',
+      'home.inv.p3.l1': 'Todo lo del paquete Estándar',
+      'home.inv.p3.l2': 'Dominio personalizado el primer año',
+      'home.inv.p3.l3': 'Cuenta regresiva y mapa interactivo',
+      'home.inv.p3.l4': 'Hasta 3 rondas de cambios',
+      'home.inv.note': 'El precio final depende de los detalles del evento. Escríbeme por WhatsApp para tu cotización exacta.',
+      'home.inv.cta': 'Cotizar por WhatsApp',
+
+      // Portafolio (Home)
+      'home.port.title': 'Proyectos <span class="primary">realizados</span>',
+      'home.port.intro': 'Una muestra del estilo de invitaciones digitales que entrego. Datos sensibles difuminados por privacidad de los clientes.',
+      'home.port.1.t': 'Invitación de Boda Digital',
+      'home.port.1.d': 'Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).',
+      'home.port.2.t': 'Invitación de Retiro / Evento Especial',
+      'home.port.2.d': 'Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.',
+      'home.port.privacy': 'Detalles específicos ocultos por privacidad.'
     },
 
     en: {

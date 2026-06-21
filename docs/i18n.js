@@ -269,6 +269,10 @@
       'home.port.1.d': 'Digital invitation with countdown, photo gallery, venue map and RSVP confirmation.',
       'home.port.2.t': 'Retirement / Special Event Invitation',
       'home.port.2.d': 'Event invitation with venue details, date, interactive map and custom design.',
+      'home.port.3.t': 'Website for Professional Photographer',
+      'home.port.3.d': 'Complete site for a wedding and event photographer: photo portfolio, service packages, events section and contact form.',
+      'home.port.4.t': 'Website for Roofing Company',
+      'home.port.4.d': 'Complete site for a Massachusetts roofing company: service pages, project gallery, about us and contact form.',
       'home.port.privacy': 'Specific details hidden for privacy.'
     },
 

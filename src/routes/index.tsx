@@ -53,7 +53,7 @@ function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-hero flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-5 py-20 text-center">
+      <section className="bg-hero flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-5 py-20 text-center max-md:min-h-[calc(100dvh+4rem)]">
         <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
           Tu Negocio Online,
           <br />
@@ -72,6 +72,15 @@ function HomePage() {
         >
           Obtener Consulta Gratuita
         </CtaButton>
+        <p className="mt-5 text-sm text-muted-foreground">
+          ¿Prefieres escribirme un mensaje de texto?{" "}
+          <a
+            href="sms:+19783324273"
+            className="font-semibold text-primary hover:underline"
+          >
+            Escríbeme aquí
+          </a>
+        </p>
       </section>
 
       {/* Beneficios rápidos */}

@@ -236,9 +236,6 @@ function HomePage() {
           <h2 className="text-center text-3xl font-extrabold md:text-4xl">
             Lo que dicen mis <span className="text-primary">clientes</span>
           </h2>
-          <p className="mt-3 text-center text-sm text-muted-foreground">
-            (Testimonios de ejemplo — editables cuando me pases los reales)
-          </p>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
@@ -287,7 +284,7 @@ function HomePage() {
             Una muestra del estilo de invitaciones digitales que entrego. Datos
             sensibles difuminados por privacidad de los clientes.
           </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
             {[
               {
                 title: "Invitación de Boda Digital",
@@ -328,15 +325,15 @@ function HomePage() {
               >
                 {(() => {
                   const imgEl = (
-                    <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                    <div className="aspect-[16/10] overflow-hidden border-b border-border bg-background">
                       <img
                         src={p.img}
                         alt={p.alt}
                         loading="lazy"
                         className={
                           p.blur
-                            ? "h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
-                            : "h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                            ? "h-full w-full scale-105 object-cover object-top blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
+                            : "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
                         }
                       />
                     </div>
